@@ -1,0 +1,487 @@
+/* ====== Header ====== */
+.header-container{
+    max-width: 1372px;
+    padding: 0 20px ;
+    margin: 0 auto;
+}
+.header-wrap{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 9px 0 9px 3px;
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+.header-menu .nav-menu{
+    display: flex;
+    gap: 55px;
+    list-style: none;
+}
+
+.header-menu .nav-menu .menu-item a{
+    font-family: 'Agrandir';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 2%;
+    position: relative;
+    color: var(--blue-bird, #0057C7);;
+}
+.header-menu .find a span:after,
+.header-menu .nav-menu .menu-item a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background: var(--soaring-orange, #F18221);
+    transition: all 0.3s;
+    top: calc(100% + 1px);
+    left: 0;
+}
+.header-menu .find a:hover span:after,
+.header-menu .nav-menu .menu-item a:hover::after{
+    width: 100%
+}
+.header-menu .find a{
+    display: flex;
+    align-items: center;
+    font-family: 'Agrandir';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: var(--soaring-orange, #F18221);
+}
+.header-menu .find a span{
+    position: relative;
+}
+.header-menu .find a span:after{
+    background: var(--blue-bird, #0057C7);
+}
+
+/* =============== HOME ================== */
+
+/* Home Banner */
+.hero{
+    background-color: var(--soaring-orange, #F18221);
+    padding: 65px 40px 94px 40px;
+}
+.hero-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+.hero-content-wrap{
+    border: 6px solid var(--beak, #FFBA00);
+    border-radius: 10px;
+    transform: rotate(-3.2deg);
+    background: var(--blue-700, #023787);
+    max-width: 591px;
+    height: max-content;
+    padding: 64px 35.84px 59.52px 51.92px;
+    height: 396px;
+}
+.hero-content {
+    position: relative; 
+    margin-left: 16px;
+    height: max-content;
+}
+.hero-image {
+    margin-left: 18px;
+    padding-top: 1px;
+}
+.hero-content::before {
+    content: "";
+    position: absolute;
+    border: 6px solid var(--beak, #FFBA00);
+    top: 17px;
+    left: -15px;
+    background: var(--beak, #FFBA00);
+    z-index: 0;
+    rotate: -3.2deg;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.hero-content .arrow {
+    border: 4px solid var(--beak, #FFBA00);
+    width: 62px;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transform: rotate(-20.6deg);
+    background: var(--blue-bird, #0057C7);
+    bottom: 114.24px;
+    left: -31.32px;
+}
+.hero-content .proud {
+    right: -52px;
+    top: -51px;
+    width: 155px;
+    rotate: 3deg;
+}
+.exclamation-point {
+    width: 52px;
+    aspect-ratio: 1 / 1;
+    border: 4px solid var(--blue-bird, #0057C7);
+    background: var(--beak, #FFBA00);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transform: rotate(4.78deg);
+    top: 28px;
+    right: 116px;
+}
+.hero-content .sub-title {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--beak, #FFBA00);
+}
+.hero-content .heading {
+    font-size: 48px;
+    line-height: 1.25;
+    font-weight: 700;
+    color: var(--white, #ffffff);
+
+}
+.hero-content .heading span {
+    display: block;
+    font-family: 'Suti';
+    font-size: 72px;
+    line-height: 1.25;
+}
+.hero-content .desc {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;
+    color: var(--white, #ffffff);
+}
+/* Find */
+section.find-onvo {
+    padding: 48px 0 42px;
+}
+.find-onvo .find-onvo-wrap {
+    max-width: 1440px;
+    padding: 0 34px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.find-onvo .find-form {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+.find-onvo .find-form .title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+}
+.find-onvo .find-form .form {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.find-onvo .find-form input {
+    font-family: 'Object Sans';
+    box-shadow: 0px 1px 2px 0px #1018280D;
+    border: 1px solid #F18221;
+    border-radius: 30px;
+    padding: 8px 13px 10px;
+    min-width: 321px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.find-onvo .find-form .form {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #667085;
+}
+
+.find-onvo .find-form .btn {
+    padding: 12px 20px;
+    font-size: 14px;
+    line-height: 20px;
+}
+/* curvy banners */
+section.curvy-banners {
+    margin-top: -54px;
+    position: relative;
+    z-index: 2;
+}
+
+.curvy-banners .banner {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    background: transparent;
+}
+
+.curvy-banners svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.curvy-banners .orange-band {
+    fill: var(--soaring-orange, #F18221);
+}
+
+.curvy-banners .yellow-band {
+    fill: var(--beak, #FFBA00);
+}
+
+.curvy-banners .wave-text {
+    font-size: 38px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    fill: #fff;
+    text-transform: uppercase;
+    dominant-baseline: middle;
+}
+
+/* Product Section */
+.product-section {
+    position: relative;
+    z-index: 3;
+}
+.product-section .prd-wrap {
+    display: flex;
+    gap: 13px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.product-section .prd-item {
+    display: flex;
+    position: relative;
+}
+
+.product-section .prd-item.coffee {
+    padding-top: 17px;
+}
+.product-section .prd-item.quick-eateries {
+    gap: 21px;
+}
+.product-section .prd-item .prd-content {
+    height: max-content;
+    max-width: 280.63px;
+}
+.prd-item.quick-eateries .prd-content {
+    padding-top: 82px;
+}
+.prd-item .prd-content .title {
+    color: var(--black, #000000);
+    font-weight: 469;
+    font-size: 24px;
+    line-height: 1.3333333;
+}
+.prd-item .prd-content .desc {
+    font-size: 16px;
+    line-height: 1.375;
+    letter-spacing: 0.04px;
+    max-width: 235px;
+    color: var(--black, #000000);
+    margin-bottom: 18px;
+}
+
+.product-section .prd-item.coffee .prd-content {
+    padding-top: 70px;
+    margin-left: -109px;
+}
+.product-section .coffee .roasted {
+    right: -61px;
+    top: 172px;
+}
+
+/* Video Section */
+section.video-section {
+    position: relative;
+    margin-top: -59px;
+    z-index: 1;
+}
+.video-wrap {
+    display: flex;
+    align-items: flex-end;
+    gap: 50px;
+}
+.video-box{
+    max-width: 816px;
+    width: calc(816 / 1440 * 100%);
+    position: relative;
+}
+.video-box .videos {
+    aspect-ratio: 816 / 613;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.video-box video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.video-overlay {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+}
+.video-overlay .video-play {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1 / 1;
+}
+.video-content {
+    max-width: 450px;
+    padding-bottom: 93px;
+}
+.video-content .title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.222222222;
+    margin-bottom: 15px;
+}
+.video-content .desc {
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.04px;
+}
+.video-section .join {
+    top: 58px;
+    z-index: 20;
+    right: -91px;
+    rotate: -16.19deg;
+}
+
+/* information */
+.information{
+    background: var(--blue-300,#86B9DF );
+}
+.information-wrap {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 22px 27px 24px 27px;
+    display: flex;
+    gap: 11px;
+}
+.information-item {
+    width: calc(378 / 1386 * 100%);
+    background: var(--white, #FFFFFF);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s;
+}
+.information-item.active {
+    width: calc(609 / 1386 * 100%);
+}
+.information-item .content {
+    padding: 42px 36px 28px 31px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.information-item.active .content {
+    padding: 39px 26px 19px 31px;
+    gap: 38px;
+    flex-direction: row;
+}
+.information-item .content .title {
+    flex-shrink: 0;
+    font-size: 30px;
+    line-height: 38px;
+    color: var(--black, #000000);
+}
+.information-item.active .content .title {
+    font-size: 36px;
+    list-style: 1.2;
+}
+.information-item .image {
+    aspect-ratio: 378 / 436;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.information-item.active .image {
+    aspect-ratio: 609 / 477;
+}
+.information-item .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left center;
+}
+.information-item .content .desc {
+    font-size: 16px;
+    line-height: 1.275;
+    color: #727272;
+}
+
+/* Image Slide */
+.image-slider {
+    background: var(--blue-bird,#0057C7 );
+    padding: 56px 0;
+    width: 100%;
+    overflow: hidden;
+}
+.image-slide-wrap {
+    display: flex;
+    align-items: center;
+}
+.image-slider .content {
+    width: 300px;
+    flex-shrink: 0;
+    padding-left: 57px;
+}
+.image-slider  .slide-box {
+    width: calc(100% - 300px);
+}
+.swiper-slide.image-item {
+    width: 229px !important;
+    aspect-ratio: 1/1;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.swiper-slide.image-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.image-slider .content .title {
+    font-size: 36px;
+    line-height: 1.22222222;
+    color: var(--white, #ffffff);
+}

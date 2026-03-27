@@ -1,63 +1,44 @@
-/* ===========================
-   HERO BANNER
-=========================== */
-.hero-banner {
+.content-col h2 {
+    font-family: 'Agrandir';
+    font-weight: 617;
+    font-size: 36px;
+    line-height: 44px;
+    color: var(--blue-bird);
+    margin-bottom: 32px;
+}
+
+.content-col p {
+    font-family: 'Object Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background: var(--Color-7, #86B9DF);
+    opacity: 1;
+    border-radius: 50%;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
     background: var(--blue-bird);
-    padding: 64px 0 60px;
-    position: relative;
-    overflow: hidden;
-}
-
-.hero-banner::before {
-    content: '';
-    position: absolute;
-    top: -60px;
-    right: -60px;
-    width: 320px;
-    height: 320px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.04);
-}
-
-.hero-banner::after {
-    content: '';
-    position: absolute;
-    bottom: -80px;
-    left: 10%;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.03);
-}
-
-.hero-banner .eyebrow {
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: var(--soaring-orange);
-    margin-bottom: 16px;
-}
-
-.hero-banner h1 {
-    color: var(--white);
-    font-size: clamp(28px, 4vw, 48px);
-    line-height: 1.15;
-    max-width: 760px;
-    font-weight: 800;
 }
 
 /* ===========================
    COMMUNITY PROGRAMS
 =========================== */
 .community-programs {
-    padding: 0 0 0;
+    overflow: hidden;
 }
 
 .community-programs .inner {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    min-height: 420px;
+    grid-template-columns: 1fr 808px;
+    min-height: 560px;
 }
 
 .community-programs .img-col {
@@ -65,7 +46,14 @@
     overflow: hidden;
 }
 
-.community-programs .img-col img {
+.community-programs .img-col .swiper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+}
+
+.community-programs .img-col .swiper-slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -74,90 +62,96 @@
 
 .community-programs .content-col {
     background: var(--white);
-    padding: 56px 52px;
+    position: relative;
+    overflow: hidden;
+    padding-left: 78px;
+}
+
+.community-programs .content-col .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.community-programs .content-col .swiper-slide {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 100%;
 }
 
-.community-programs .content-col h2 {
-    font-size: 26px;
-    line-height: 1.25;
-    margin-bottom: 18px;
+.cp-content-item h2,
+.cp-content-item p {
+    max-width: 600px;
+    width: 100%;
 }
 
-.community-programs .content-col p {
-    color: var(--gray);
-    font-size: 14px;
-    margin-bottom: 28px;
+.community-programs .content-col .tag {
+    display: inline-block;
+    background: var(--blue-100);
+    color: var(--blue-bird);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 40px;
+    margin-bottom: 14px;
 }
 
-.btn-group {
+.community-programs .swiper-pagination {
+    position: absolute;
+    bottom: 75px;
+    left: -4px;
+    display: flex;
+    gap: 4px;
+    justify-content: flex-start;
+}
+
+
+
+.community-programs .btn-group {
     display: flex;
     gap: 10px;
-    flex-wrap: wrap;
-}
-
-/* slider dots */
-.slider-dots {
-    display: flex;
-    gap: 6px;
-    margin-top: 24px;
-}
-
-.slider-dots span {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: var(--blue-100);
-    display: block;
-}
-
-.slider-dots span.active {
-    background: var(--blue-bird);
+    margin-top: 32px;
 }
 
 /* ===========================
    FEATURED IMPACT
 =========================== */
 .featured-impact {
-    background: #f5f9ff;
-    padding: 0;
+    background: var(--Color-7, #86B9DF);
+    padding: 17px 29px 18px 29px;
 }
 
 .featured-impact .inner {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    min-height: 380px;
+    grid-template-columns: 1fr 609px;
+    min-height: 456px;
+    background: #FFFBF9;
+    border-radius: 12px;
 }
 
 .featured-impact .content-col {
-    padding: 56px 52px;
+    padding-left: 67px;
+    padding-right: 92px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .featured-impact .eyebrow {
-    font-size: 11px;
+    font-family: 'Object Sans';
     font-weight: 700;
-    letter-spacing: 2px;
+    font-size: 17px;
+    line-height: 18px;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--soaring-orange);
-    margin-bottom: 14px;
+    margin-bottom: 22px;
 }
 
-.featured-impact h2 {
-    font-size: 30px;
-    line-height: 1.2;
-    margin-bottom: 20px;
-    color: var(--blue-bird);
-}
-
-.featured-impact p {
-    color: var(--gray);
-    line-height: 1.65;
-    font-size: 14px;
+.featured-impact .content-col h2 {
+    margin-bottom: 22px;
 }
 
 .featured-impact .img-col {
@@ -169,6 +163,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 12px;
 }
 
 /* ===========================
@@ -181,12 +176,13 @@
 
 .edu-grants .inner {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    min-height: 380px;
+    grid-template-columns: 1fr 637px;
+    min-height: 410px;
 }
 
 .edu-grants .content-col {
-    padding: 56px 52px;
+    padding-left: 80px;
+    padding-right: 103px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -194,16 +190,11 @@
 }
 
 .edu-grants h2 {
-    font-size: 28px;
-    color: var(--white);
-    line-height: 1.25;
-    margin-bottom: 18px;
+    color: var(--Beige, #FFFBF9);
 }
 
 .edu-grants p {
-    color: rgba(255, 255, 255, 0.75);
-    font-size: 14px;
-    line-height: 1.65;
+    color: var(--Beige, #FFFBF9);
 }
 
 .edu-grants .img-col {
@@ -222,41 +213,34 @@
    GIVING BACK GALLERY
 =========================== */
 .giving-back {
-    padding: 60px 0 56px;
-    background: #FFFBF9;
+    padding: 50px 0 30px;
+    background: var(--Color-8, #CBE0F2);
+
+}
+
+.gallery-swiper {
+    padding-bottom: 45px;
 }
 
 .giving-back h2 {
-    font-size: 32px;
-    margin-bottom: 32px;
+    font-family: 'Agrandir';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
     color: var(--blue-bird);
-}
+    padding-left: 102px;
 
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 16px;
+    margin-bottom: 23px;
 }
 
 .gallery-item {
-    border-radius: 12px;
+    border-radius: 8px;
     overflow: hidden;
     background: var(--blue-100);
-    aspect-ratio: 4/3;
+    aspect-ratio: 1/1;
+    max-width: 370px;
+    width: 100%;
     position: relative;
-}
-
-.gallery-item::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(180deg, transparent 40%, rgba(0, 55, 135, 0.3) 100%);
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.gallery-item:hover::after {
-    opacity: 1;
 }
 
 .gallery-item img {
@@ -266,70 +250,51 @@
     transition: transform 0.4s ease;
 }
 
-.gallery-item:hover img {
-    transform: scale(1.04);
+.swiper-pagination-gallery {
+    position: absolute;
 }
 
 /* placeholder for missing images */
-.gallery-placeholder {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, var(--blue-100) 0%, var(--blue-300) 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.gallery-placeholder svg {
-    opacity: 0.4;
-}
-
-.gallery-dots {
-    display: flex;
-    gap: 6px;
-    margin-top: 20px;
-    justify-content: center;
-}
-
-.gallery-dots span {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: var(--blue-100);
-    display: block;
-}
-
-.gallery-dots span.active {
-    background: var(--blue-bird);
-}
 
 /* ===========================
    DONATIONS
 =========================== */
 .donations {
-    background: var(--white);
-    padding: 60px 0 64px;
-    border-top: 1px solid #eaf1fb;
+    padding: 57px 0 67px;
+    background: var(--blue-bird);
+}
+
+.donations-container {
+    padding-left: 110px;
+    padding-right: 134px;
 }
 
 .donations h2 {
-    font-size: 28px;
-    margin-bottom: 14px;
-    color: var(--blue-bird);
+    font-family: 'Agrandir';
+    font-weight: 617;
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 17px;
+    color: #FFFBF9;
 }
 
 .donations .subtitle {
-    color: var(--gray);
-    font-size: 14px;
-    max-width: 680px;
-    line-height: 1.6;
+    color: #FFFBF9;
+    font-family: 'Object Sans';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
     margin-bottom: 36px;
+    max-width: 983px;
+    width: 100%;
 }
 
 .donations-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 0;
+    gap: 50px;
+    /* margin-left: 12px; */
 }
 
 .donations-col ul {
@@ -342,65 +307,154 @@
 .donations-col ul li {
     position: relative;
     padding-left: 14px;
-    color: #3d3d3d;
-    font-size: 13px;
-    line-height: 1.5;
+    color: #FFFBF9;
+    font-family: 'Object Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
 }
 
 .donations-col ul li::before {
-    content: '›';
+    content: '.';
     position: absolute;
     left: 0;
-    color: var(--soaring-orange);
+    color: #FFFBF9;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 10px;
+    /* left: -8px; */
+    top: 0px;
     line-height: 1.3;
 }
 
 /* ===========================
    RESPONSIVE
 =========================== */
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
+
+    .community-programs .inner,
+    .featured-impact .inner,
+    .edu-grants .inner {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .content-col h2 {
+        font-size: 30px;
+        line-height: 38px;
+        margin-bottom: 17px;
+    }
+
+    .content-col p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .community-programs .content-col {
+        padding-left: 30px;
+    }
+
+    .donations-container {
+        padding: 0 30px;
+    }
+
+    .edu-grants .content-col,
+    .featured-impact .content-col {
+        padding-left: 40px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .community-programs .btn-group {
+        margin-top: 0px;
+    }
+
+    .community-programs .content-col .swiper-slide {
+        justify-content: flex-start;
+        padding-bottom: 22px;
+    }
+
+    .community-programs .content-col .swiper-slide p {
+        margin-bottom: 26px;
+    }
+
+    .community-programs .swiper-pagination {
+        bottom: 0px;
+    }
 
     .community-programs .inner,
     .featured-impact .inner,
     .edu-grants .inner {
         grid-template-columns: 1fr;
+        gap: 26px;
     }
 
-    .community-programs .img-col,
-    .featured-impact .img-col,
-    .edu-grants .img-col {
-        min-height: 260px;
+    .community-programs .content-col {
+        padding: 0 37px;
+        padding-bottom: 37px;
+    }
+
+    .featured-impact {
+        padding: 23px 16px 25px 16px;
+    }
+
+    .featured-impact .content-col {
+        padding: 42px 30px 0px 30px;
+    }
+
+    .featured-impact .content-col h2 {
+        margin-bottom: 14px;
+    }
+
+    .featured-impact .img-col img {
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    .featured-impact .inner {
+        border-radius: 20px;
     }
 
     .edu-grants .content-col {
-        order: 2;
+        padding: 35px 33px 14px 30px;
+    }
+
+    .edu-grants h2 {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 17px;
+    }
+
+    .edu-grants p {
+        font-size: 14px;
+        line-height: 20px;
+
+    }
+
+    .community-programs .img-col {
+        min-height: 264px;
+    }
+
+    .featured-impact .img-col {
+        min-height: 242px;
     }
 
     .edu-grants .img-col {
-        order: 1;
+        min-height: 277px;
     }
 
-    .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .giving-back {
+        padding-top: 34px;
+        padding-bottom: 14px;
     }
 
-    .donations-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 24px;
-    }
-}
-
-@media (max-width: 600px) {
-    .hero-banner {
-        padding: 44px 0 40px;
-    }
-
-    .community-programs .content-col,
-    .featured-impact .content-col,
-    .edu-grants .content-col {
-        padding: 36px 24px;
+    .giving-back h2 {
+        text-align: center;
+        padding-left: 0px;
+        font-size: 30px;
+        line-height: 38px;
+        margin-bottom: 16px;
     }
 
     .gallery-grid {
@@ -409,13 +463,35 @@
 
     .donations-grid {
         grid-template-columns: 1fr;
-    }
-
-    .giving-back {
-        padding: 40px 0 36px;
+        gap: 0px;
     }
 
     .donations {
-        padding: 40px 0 44px;
+        padding-top: 45px;
+    }
+
+    .donations .subtitle {
+        margin-bottom: 18px;
+    }
+
+    .donations h2 {
+        font-size: 30px;
+        line-height: 38px;
+        margin-bottom: 5px;
+    }
+
+    .donations .subtitle {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .donations-col ul {
+        gap: 0px;
+    }
+
+    .donations-col ul li {
+        font-size: 12px;
+        line-height: 18px;
+        padding-left: 10px;
     }
 }

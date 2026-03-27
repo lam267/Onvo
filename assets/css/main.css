@@ -2,7 +2,11 @@
 /*=======================
       font
 =======================*/
-
+@font-face {
+	src: url('../fonts/Agrandir-Variable.woff2') format('woff2-variations');
+	font-family:'Agrandir';
+	font-style: normal;
+}
 @font-face {
   font-family: 'Agrandir';
   src: url('../fonts/Agrandir-Regular.woff') format('woff2'),

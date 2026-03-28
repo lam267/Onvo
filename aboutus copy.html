@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us – Onvo</title>
+<style>
+/*=======================
+  Root & Reset
+=======================*/
+:root {
+  --soaring-orange: #F18221;
+  --orange-500: #F87700;
+  --orange-200: #FFB782;
+  --blue-bird: #0057C7;
+  --blue-700: #023787;
+  --blue-100: #CBE0F2;
+  --beak: #FFBA00;
+  --white: #FFFFFF;
+  --black: #000000;
+  --gray: #667085;
+  --bg: #FFFBF9;
+  --bg-blue: #C8D8EF;
+}
+
+*{ margin:0; padding:0; box-sizing:border-box; }
+
+body{
+  font-family: 'Object Sans', sans-serif;
+  font-size: 14px;
+  background: var(--bg);
+  color: var(--black);
+  overflow-x: hidden;
+}
+
+img{ max-width:100%; display:block; height:auto; }
+ul{ list-style:none; padding:0; margin:0; }
+
+.container{
+  max-width: 1440px;
+  padding: 0 clamp(20px, 4.167vw, 60px);
+  margin: 0 auto;
+}
+
+h1,h2,h3,h4{
+  font-family: 'Agrandir', sans-serif;
+  color: var(--blue-bird);
+  font-weight: 700;
+}
+
+/*=======================
+  Hero / Intro
+=======================*/
+.about-hero{
+  padding: clamp(48px, 5.5vw, 80px) 0;
+}
+
+.about-hero .inner{
+  display: grid;
+  grid-template-columns: 1fr clamp(340px, 44vw, 636px);
+  gap: clamp(24px, 3vw, 48px);
+  align-items: center;
+  min-height: clamp(320px, 38vw, 548px);
+}
+
+.about-hero .content-col{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-hero h1{
+  font-size: clamp(28px, 3.5vw, 48px);
+  line-height: 1.1;
+  margin-bottom: clamp(14px, 1.5vw, 20px);
+}
+
+.about-hero p{
+  font-size: clamp(13px, 1vw, 15px);
+  line-height: 1.6;
+  color: var(--gray);
+  margin-bottom: clamp(12px, 1.5vw, 18px);
+  max-width: 460px;
+}
+
+.about-hero .stats-list{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 24px;
+}
+
+.about-hero .stats-list li{
+  font-size: 14px;
+  color: var(--black);
+  padding-left: 18px;
+  position: relative;
+}
+
+.about-hero .stats-list li::before{
+  content:'–';
+  position: absolute;
+  left: 0;
+  color: var(--soaring-orange);
+  font-weight: 700;
+}
+
+.about-hero .img-col{
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #d0dde8;
+  aspect-ratio: 16/10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Video play button placeholder */
+.play-btn{
+  width: clamp(48px,5vw,72px);
+  height: clamp(48px,5vw,72px);
+  background: rgba(255,255,255,0.85);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+.play-btn:hover{ background:#fff; transform: scale(1.08); }
+.play-btn svg{ margin-left:4px; }
+
+.sticker-about{
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: clamp(72px,7vw,100px);
+  height: clamp(72px,7vw,100px);
+  background: var(--blue-bird);
+  border-radius: 50%;
+  border: 4px solid var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-family: 'Agrandir', sans-serif;
+  font-weight: 700;
+  font-size: clamp(9px, 0.8vw, 11px);
+  text-align: center;
+  line-height: 1.2;
+  z-index: 2;
+}
+
+/*=======================
+  Our Story
+=======================*/
+.our-story{
+  position: relative;
+  overflow: hidden;
+}
+
+.our-story .bg-img{
+  width: 100%;
+  aspect-ratio: 16/6;
+  background: #8a9db5;
+  object-fit: cover;
+  display: block;
+}
+
+.our-story .story-card{
+  position: absolute;
+  bottom: clamp(20px, 4vw, 56px);
+  left: clamp(20px, 6.5vw, 94px);
+  max-width: clamp(280px, 38vw, 548px);
+  background: var(--blue-bird);
+  border-radius: 16px;
+  padding: clamp(24px, 3vw, 40px) clamp(20px, 2.5vw, 36px);
+  color: var(--white);
+}
+
+.our-story .story-card .est-badge{
+  position: absolute;
+  top: -20px;
+  right: clamp(16px, 2vw, 28px);
+  width: clamp(48px,5vw,64px);
+  height: clamp(48px,5vw,64px);
+  background: var(--soaring-orange);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Agrandir', sans-serif;
+  font-weight: 700;
+  font-size: clamp(8px,0.7vw,10px);
+  color: var(--white);
+  text-align: center;
+  line-height: 1.2;
+}
+
+.our-story .story-card h2{
+  color: var(--white);
+  font-size: clamp(20px, 2vw, 28px);
+  margin-bottom: clamp(12px, 1.5vw, 20px);
+}
+
+.our-story .story-card p{
+  font-size: clamp(13px, 1vw, 14px);
+  line-height: 1.6;
+  color: rgba(255,255,255,0.85);
+  margin-bottom: clamp(10px,1vw,14px);
+}
+
+.our-story .story-card p:last-child{ margin-bottom: 0; }
+
+/*=======================
+  Timeline
+=======================*/
+.timeline-section{
+  background: var(--bg-blue);
+  padding: clamp(40px, 5vw, 72px) 0 clamp(32px, 4vw, 56px);
+  overflow: hidden;
+}
+
+.timeline-scroll-wrapper{
+  position: relative;
+  overflow: hidden;
+}
+
+/* Fade edges */
+.timeline-scroll-wrapper::before,
+.timeline-scroll-wrapper::after{
+  content:'';
+  position: absolute;
+  top: 0; bottom: 0;
+  width: clamp(32px, 5vw, 72px);
+  z-index: 2;
+  pointer-events: none;
+}
+.timeline-scroll-wrapper::before{
+  left: 0;
+  background: linear-gradient(to right, var(--bg-blue), transparent);
+}
+.timeline-scroll-wrapper::after{
+  right: 0;
+  background: linear-gradient(to left, var(--bg-blue), transparent);
+}
+
+.timeline-track{
+  position: relative;
+  display: flex;
+  gap: 0;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: 0 clamp(40px, 6vw, 80px) 24px;
+  scrollbar-width: none;
+  cursor: grab;
+  user-select: none;
+}
+.timeline-track:active{ cursor: grabbing; }
+.timeline-track::-webkit-scrollbar{ display: none; }
+
+/* connecting line */
+.timeline-line{
+  position: absolute;
+  top: 11px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--blue-bird);
+  min-width: 100%;
+}
+
+.timeline-item{
+  flex-shrink: 0;
+  position: relative;
+  padding-top: 36px;
+  width: clamp(140px, 14vw, 200px);
+  padding-right: clamp(16px, 2vw, 28px);
+  scroll-snap-align: start;
+  transition: opacity 0.35s ease;
+}
+
+.timeline-item.is-active .year{
+  color: var(--soaring-orange);
+}
+.timeline-item.is-active::before{
+  background: var(--soaring-orange);
+  border-color: var(--soaring-orange);
+  transform: scale(1.3);
+}
+
+/* dot */
+.timeline-item::before{
+  content:'';
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 3px solid var(--blue-bird);
+  transition: background 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+  z-index: 1;
+}
+
+.timeline-item .year{
+  font-family: 'Agrandir', sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: clamp(32px, 3.5vw, 48px);
+  color: var(--blue-bird);
+  line-height: 1;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.timeline-item .desc{
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--gray);
+  max-width: 140px;
+}
+
+/* Scroll nav arrows */
+.timeline-nav{
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 16px clamp(40px, 6vw, 80px) 0;
+}
+
+.timeline-arrow{
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid var(--blue-bird);
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.25s ease;
+  flex-shrink: 0;
+}
+.timeline-arrow:hover{ background: var(--blue-bird); }
+.timeline-arrow:hover svg path{ stroke: var(--white); }
+.timeline-arrow svg path{
+  stroke: var(--blue-bird);
+  transition: stroke 0.25s ease;
+}
+
+/*=======================
+  Mission & Values
+=======================*/
+
+.mission-values{
+  background: var(--bg-blue);
+  padding: clamp(16px, 2vw, 32px) 0 clamp(48px, 6vw, 88px);
+}
+
+.mission-values .inner{
+  display: grid;
+  grid-template-columns: 1fr 1fr clamp(180px, 20vw, 280px);
+  gap: clamp(16px, 2vw, 24px);
+  align-items: end;
+}
+
+.mv-card{
+  background: var(--white);
+  padding: clamp(24px, 2.5vw, 50px);
+}
+
+.mv-card h3{
+  font-size: clamp(18px, 1.8vw, 24px);
+  margin-bottom: clamp(10px, 1vw, 16px);
+}
+
+.mv-card p{
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--gray);
+  margin: 0;
+}
+
+/* 2-column values list */
+.mv-card .values-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 4px;
+}
+
+.mv-card .values-list li{
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--black);
+  padding-left: 18px;
+  position: relative;
+}
+.mv-card .values-list li::before{
+  content:'·';
+  position: absolute;
+  left: 0;
+  color: var(--blue-bird);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.mv-card .mv-intro{
+  margin-bottom: 14px;
+}
+
+/* Owl column */
+.owl-col{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.owl-placeholder{
+  width: clamp(140px, 16vw, 220px);
+  height: clamp(140px, 16vw, 220px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(80px, 10vw, 140px);
+  filter: drop-shadow(0 8px 24px rgba(0,0,0,0.12));
+}
+
+/*=======================
+  Community  (full-bleed)
+=======================*/
+.community{
+  display: grid;
+  grid-template-columns: clamp(280px, 44vw, 634px) 1fr;
+  min-height: clamp(320px, 36vw, 520px);
+  overflow: hidden;
+}
+
+.community .img-col{
+  position: relative;
+  overflow: hidden;
+  background: #b0bcc8;
+}
+
+.community .img-col .img-placeholder{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.community .img-col .sticker-pa{
+  position: absolute;
+  top: clamp(10px, 2vw, 24px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: clamp(72px, 7vw, 96px);
+  height: clamp(72px, 7vw, 96px);
+  background: var(--blue-bird);
+  border-radius: 50%;
+  border: 4px solid var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-family: 'Agrandir', sans-serif;
+  font-weight: 700;
+  font-size: clamp(8px, 0.7vw, 10px);
+  text-align: center;
+  line-height: 1.2;
+  z-index: 2;
+}
+
+.community .content-col{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(32px, 5vw, 72px) clamp(28px, 5vw, 72px);
+  background: var(--white);
+}
+
+.community .content-col h2{
+  font-size: clamp(22px, 2.5vw, 32px);
+  margin-bottom: clamp(12px, 1.5vw, 20px);
+}
+
+.community .content-col p{
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--gray);
+  max-width: 420px;
+  margin-bottom: clamp(16px, 2vw, 28px);
+}
+
+/*=======================
+  Powered by People  (full-bleed)
+=======================*/
+.powered-people{
+  display: grid;
+  grid-template-columns: 1fr clamp(300px, 50vw, 720px);
+  min-height: clamp(320px, 36vw, 520px);
+  overflow: hidden;
+}
+
+.powered-people .content-col{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(32px, 5vw, 72px) clamp(28px, 5vw, 72px);
+  background: var(--white);
+}
+
+.powered-people .content-col h2{
+  font-size: clamp(22px, 2.5vw, 32px);
+  margin-bottom: clamp(12px, 1.5vw, 20px);
+}
+
+.powered-people .content-col p{
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--gray);
+  max-width: 420px;
+  margin-bottom: clamp(16px, 2vw, 28px);
+}
+
+.powered-people .btn-group{
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.powered-people .img-col{
+  position: relative;
+  overflow: hidden;
+  background: #c0ccd8;
+}
+
+.powered-people .img-col .img-placeholder{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*=======================
+  Rewards Banner
+=======================*/
+.rewards-banner{
+  background: var(--soaring-orange);
+  overflow: hidden;
+  padding: clamp(14px, 1.5vw, 20px) 0;
+  position: relative;
+}
+
+.rewards-banner .ticker{
+  display: flex;
+  gap: 0;
+  animation: tickerMove 18s linear infinite;
+  white-space: nowrap;
+  width: max-content;
+}
+
+.rewards-banner .ticker span{
+  font-family: 'Agrandir', sans-serif;
+  font-weight: 700;
+  font-size: clamp(16px, 1.8vw, 22px);
+  color: var(--white);
+  padding: 0 clamp(16px, 2vw, 28px);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.rewards-banner .ticker span.dot{
+  color: var(--beak);
+  padding: 0;
+  font-size: clamp(20px, 2vw, 28px);
+  line-height: 1;
+}
+
+@keyframes tickerMove{
+  0%{ transform: translateX(0); }
+  100%{ transform: translateX(-50%); }
+}
+
+/*=======================
+  App / Rewards CTA
+=======================*/
+.app-cta{
+  background: var(--blue-bird);
+  padding: clamp(48px, 5.5vw, 80px) 0;
+  overflow: hidden;
+}
+
+.app-cta .inner{
+  display: grid;
+  grid-template-columns: 1fr clamp(220px, 26vw, 360px);
+  gap: clamp(24px, 3vw, 48px);
+  align-items: center;
+}
+
+.app-cta .content-col h2{
+  color: var(--white);
+  font-size: clamp(22px, 2.5vw, 36px);
+  margin-bottom: clamp(16px, 2vw, 28px);
+  max-width: 520px;
+}
+
+.app-cta .btn-group{
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.app-cta .img-col{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.phone-placeholder{
+  width: clamp(140px, 16vw, 220px);
+  aspect-ratio: 9/18;
+  background: #1a2e50;
+  border-radius: clamp(16px, 2vw, 28px);
+  border: 4px solid rgba(255,255,255,0.2);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone-placeholder::before{
+  content:'';
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  height: 6px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 4px;
+}
+
+.phone-screen-icon{
+  font-size: clamp(32px, 4vw, 52px);
+}
+
+/*=======================
+  Buttons
+=======================*/
+.btn{
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 80px;
+  font-family: 'Agrandir', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  white-space: nowrap;
+}
+.btn:hover{ opacity: 0.88; transform: translateY(-1px); }
+
+.btn-orange{
+  background: var(--soaring-orange);
+  color: var(--white);
+}
+
+.btn-blue{
+  background: var(--blue-bird);
+  color: var(--white);
+}
+
+.btn-white{
+  background: var(--white);
+  color: var(--blue-bird);
+}
+
+.btn-outline-white{
+  background: transparent;
+  color: var(--white);
+  border: 2px solid rgba(255,255,255,0.6);
+}
+
+/*=======================
+  Image placeholders
+=======================*/
+.img-placeholder{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #b8cce0 0%, #8aafd0 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.5);
+  font-size: 42px;
+}
+
+/*=======================
+  Responsive
+=======================*/
+@media(max-width: 1024px){
+  .about-hero .inner,
+  .app-cta .inner{
+    grid-template-columns: 1fr;
+  }
+  .community,
+  .powered-people{
+    grid-template-columns: 1fr;
+  }
+  .community .img-col,
+  .powered-people .img-col{
+    min-height: 280px;
+  }
+  .mission-values .inner{
+    grid-template-columns: 1fr 1fr;
+  }
+  .owl-col{ display: none; }
+}
+
+@media(max-width: 600px){
+  .mission-values .inner{
+    grid-template-columns: 1fr;
+  }
+  .app-cta .img-col{ display: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- =====================
+     HERO / INTRO
+===================== -->
+<section class="about-hero">
+  <div class="container">
+    <div class="inner">
+
+      <div class="content-col">
+        <h1>Built for the Road<br>Since 1988</h1>
+        <p>What started as a single location in Tunkhannock, Pennsylvania has grown into a trusted travel brand serving thousands of guests every day.</p>
+        <ul class="stats-list">
+          <li>40+ travel plazas</li>
+          <li>24 restaurants</li>
+          <li>6 hotels</li>
+          <li>Serving PA and NY travelers</li>
+        </ul>
+      </div>
+
+      <div class="img-col">
+        <div class="img-placeholder">▶</div>
+        <div class="play-btn" style="position:absolute;">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+            <path d="M7 4l12 7-12 7V4z" fill="#0057C7"/>
+          </svg>
+        </div>
+        <div class="sticker-about">ABOUT<br>US</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =====================
+     OUR STORY
+===================== -->
+<section class="our-story">
+  <div class="img-placeholder" style="width:100%;aspect-ratio:16/6;"></div>
+
+  <div class="story-card">
+    <div class="est-badge">EST<br>1988</div>
+    <h2>Our Story</h2>
+    <p>Founded in 1988, Onvo (formerly known as Liberty), began as a family business rooted in Northeast Pennsylvania. Since opening our first location in Tunkhannock, PA, we've steadily expanded our footprint while staying true to what matters most: serving travelers with convenience, care, and consistency.</p>
+    <p>Over the years, our growth has included petroleum distribution, quick-service and full-service restaurants, and hotel properties; each designed to better support people on the road.</p>
+  </div>
+</section>
+
+<!-- =====================
+     TIMELINE
+===================== -->
+<section class="timeline-section">
+
+  <div class="timeline-scroll-wrapper">
+    <div class="timeline-track" id="timelineTrack">
+      <div class="timeline-line"></div>
+
+      <div class="timeline-item">
+        <div class="year">1988</div>
+        <div class="desc">First location,<br>Tunkhannock, PA</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="year">1998</div>
+        <div class="desc">Established petroleum distribution business and became an Exxon distributor</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="year">2002</div>
+        <div class="desc">First Quick Service Restaurant, Subway, Harford, PA</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="year">2005</div>
+        <div class="desc">First Hotel, Holiday Inn Express, Gibson, PA</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="year">2009</div>
+        <div class="desc">First Burger King,<br>Gouldsboro, PA</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="year">2014</div>
+        <div class="desc">First Marriott Fairfield Inn &amp; Suites, Stroudsburg, PA</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="year">2017</div>
+        <div class="desc">First Travel Plaza acquisition</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="year">2020</div>
+        <div class="desc">Rebranded as Onvo from Liberty</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="year">2024</div>
+        <div class="desc">40+ travel plazas across PA &amp; NY</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="timeline-nav">
+    <button class="timeline-arrow" id="tlPrev" aria-label="Previous">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <path d="M10 12L6 8l4-4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    <button class="timeline-arrow" id="tlNext" aria-label="Next">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <path d="M6 4l4 4-4 4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+  </div>
+
+</section>
+
+<!-- =====================
+     MISSION & VALUES
+===================== -->
+<section class="mission-values">
+  <div class="container">
+    <div class="inner">
+
+      <div class="mv-card">
+        <h3>Our Mission</h3>
+        <p>To provide guests with exceptional service that is always quick, always kind, and always convenient. We do this by offering clean and safe facilities, a vibrant atmosphere, and service with a smile.</p>
+      </div>
+
+      <div class="mv-card">
+        <h3>Our Values</h3>
+        <p class="mv-intro">These values guide everything we do, from how we serve our guests to how we support our team.</p>
+        <ul class="values-list">
+          <li>Do It Once, Do It Right</li>
+          <li>Exceed Expectations</li>
+          <li>Be the Best at What You Do</li>
+          <li>Be a Team Player</li>
+          <li>Act with Integrity</li>
+        </ul>
+      </div>
+
+      <div class="owl-col">
+        <div class="owl-placeholder">🦉</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =====================
+     COMMUNITY
+===================== -->
+<section class="community">
+
+  <div class="img-col">
+    <div class="img-placeholder"></div>
+    <div class="sticker-pa">PA<br>PROUD</div>
+  </div>
+
+  <div class="content-col">
+    <h2>Giving Back to Our<br>Communities</h2>
+    <p>Onvo is nothing without our communities, and we're proud to support the areas we call home. Through local partnerships, volunteer efforts, and charitable giving, we work to make a positive impact for the people we serve.</p>
+    <a href="#" class="btn btn-orange"><span>Learn More</span></a>
+  </div>
+
+</section>
+
+<!-- =====================
+     POWERED BY PEOPLE
+===================== -->
+<section class="powered-people">
+
+  <div class="content-col">
+    <h2>Powered by Our People</h2>
+    <p>Onvo is built by people who care about the journey as much as the destination. From our front-line teams to leadership, we're committed to creating welcoming spaces, supporting one another, and showing up for our communities.</p>
+    <div class="btn-group">
+      <a href="#" class="btn btn-orange"><span>Explore Careers</span></a>
+      <a href="#" class="btn btn-blue"><span>Meet Our Team</span></a>
+    </div>
+  </div>
+
+  <div class="img-col">
+    <div class="img-placeholder"></div>
+  </div>
+
+</section>
+
+<!-- =====================
+     REWARDS TICKER BANNER
+===================== -->
+<div class="rewards-banner">
+  <div class="ticker">
+    <!-- duplicate for seamless loop -->
+    <span>Sign Up for Onvo Rewards Today!</span><span class="dot">★</span>
+    <span>Sign Up for Onvo Rewards Today!</span><span class="dot">★</span>
+    <span>Sign Up for Onvo Rewards Today!</span><span class="dot">★</span>
+    <span>Sign Up for Onvo Rewards Today!</span><span class="dot">★</span>
+    <span>Sign Up for Onvo Rewards Today!</span><span class="dot">★</span>
+    <span>Sign Up for Onvo Rewards Today!</span><span class="dot">★</span>
+    <span>Sign Up for Onvo Rewards Today!</span><span class="dot">★</span>
+    <span>Sign Up for Onvo Rewards Today!</span><span class="dot">★</span>
+  </div>
+</div>
+
+<!-- =====================
+     APP / REWARDS CTA
+===================== -->
+<section class="app-cta">
+  <div class="container">
+    <div class="inner">
+
+      <div class="content-col">
+        <h2>Download the Onvo app or sign up online to begin earning rewards and fuel savings.</h2>
+        <div class="btn-group">
+          <a href="#" class="btn btn-orange"><span>Download the App</span></a>
+          <a href="#" class="btn btn-outline-white"><span>Sign Up Online</span></a>
+        </div>
+      </div>
+
+      <div class="img-col">
+        <div class="phone-placeholder">
+          <div class="phone-screen-icon">📱</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+const track   = document.getElementById('timelineTrack');
+const items   = Array.from(track.querySelectorAll('.timeline-item'));
+let current   = 0;
+let autoTimer = null;
+let isPaused  = false;
+
+function getItemWidth() {
+  return items[0] ? items[0].offsetWidth : 160;
+}
+
+function scrollToIndex(idx) {
+  // clamp
+  idx = Math.max(0, Math.min(idx, items.length - 1));
+  current = idx;
+
+  // highlight active
+  items.forEach((el, i) => el.classList.toggle('is-active', i === idx));
+
+  // scroll so item aligns at left edge (accounting for padding)
+  const pad = parseFloat(getComputedStyle(track).paddingLeft) || 0;
+  const target = items[idx].offsetLeft - pad;
+  track.scrollTo({ left: target, behavior: 'smooth' });
+}
+
+function startAuto() {
+  stopAuto();
+  autoTimer = setInterval(() => {
+    if (isPaused) return;
+    const next = current + 1 >= items.length ? 0 : current + 1;
+    scrollToIndex(next);
+  }, 2200);
+}
+
+function stopAuto() {
+  if (autoTimer) { clearInterval(autoTimer); autoTimer = null; }
+}
+
+// Init first item
+scrollToIndex(0);
+startAuto();
+
+// Pause on hover
+track.addEventListener('mouseenter', () => { isPaused = true; });
+track.addEventListener('mouseleave', () => { isPaused = false; });
+track.addEventListener('touchstart',  () => { isPaused = true; }, { passive: true });
+track.addEventListener('touchend',    () => {
+  setTimeout(() => isPaused = false, 1500);
+}, { passive: true });
+
+// Drag scroll
+let isDown = false, startX, scrollLeft;
+track.addEventListener('mousedown', e => {
+  isDown = true; isPaused = true;
+  track.style.cursor = 'grabbing';
+  startX = e.pageX - track.offsetLeft;
+  scrollLeft = track.scrollLeft;
+});
+['mouseleave','mouseup'].forEach(ev => track.addEventListener(ev, () => {
+  if (!isDown) return;
+  isDown = false;
+  track.style.cursor = 'grab';
+  // snap to nearest after drag
+  const pad = parseFloat(getComputedStyle(track).paddingLeft) || 0;
+  const closest = items.reduce((prev, el, i) => {
+    const dist = Math.abs(el.offsetLeft - pad - track.scrollLeft);
+    return dist < prev.dist ? { dist, i } : prev;
+  }, { dist: Infinity, i: 0 });
+  scrollToIndex(closest.i);
+  setTimeout(() => isPaused = false, 800);
+}));
+track.addEventListener('mousemove', e => {
+  if (!isDown) return;
+  e.preventDefault();
+  track.scrollLeft = scrollLeft - (e.pageX - track.offsetLeft - startX) * 1.2;
+});
+
+// Arrow buttons — step one year
+document.getElementById('tlPrev').addEventListener('click', () => {
+  isPaused = true;
+  scrollToIndex(current - 1);
+  setTimeout(() => isPaused = false, 1200);
+});
+document.getElementById('tlNext').addEventListener('click', () => {
+  isPaused = true;
+  scrollToIndex(current + 1);
+  setTimeout(() => isPaused = false, 1200);
+});
+
+// Click on any year dot
+items.forEach((el, i) => {
+  el.addEventListener('click', () => {
+    isPaused = true;
+    scrollToIndex(i);
+    setTimeout(() => isPaused = false, 1200);
+  });
+});
+</script>
+</body>
+</html>

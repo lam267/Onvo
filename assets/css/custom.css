@@ -1,0 +1,1849 @@
+.hidden{
+    display: none;
+}
+.hero-coffee{
+    padding: 100px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 675px;
+        display: flex;
+    align-items: center;
+}
+
+.hero-coffee__box{
+    background-color: var(--blue-bird);
+    padding: 42px 23px 29px 44px;
+    border: 6px solid var(--beak);
+    border-radius: 7px;
+    max-width: 492.5px;
+    background-clip: padding-box;
+    position: relative;
+    
+}
+
+.hero-coffee__content{
+    position: relative;
+    max-width: max-content;
+    width: 100%;
+    margin-top: -12px;
+}
+
+.hero-coffee__content::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: var(--beak);
+    /* border: 6px solid var(--beak); */
+    left: -14.31px;
+    top: 11.61px;
+    border-radius: 7px;
+
+}
+
+.hero-coffee__content{
+    z-index: 2;
+    position: relative;
+}
+
+.hero-coffee .container {
+    max-width: 1335px;
+    width: 100%;
+}
+
+.hero-coffee__heading {
+    color: var(--white);
+    font-family: 'Agrandir Variable';
+    font-weight: 617;
+    font-size: 48px;
+    line-height: calc(60 / 48);
+    letter-spacing: 0%;
+
+
+}
+
+.hero-coffee__description p{
+    color: var(--white);
+    font-family: 'Suti';
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 1;
+    letter-spacing: 0%;
+
+}
+
+.intro-coffee{
+    padding-top: 25px;
+    padding-bottom: 35px;
+}
+
+.intro-coffee .container{
+    max-width: 1336px;
+}
+
+.intro-coffee__inner{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.intro-coffee__content{
+    width: 53%;
+    padding: 103px 20px 139px 3.5%;
+}
+
+.intro-coffee__thumbnail{
+    width: 47%;
+    position: relative;
+}
+
+.img-intro__spin{
+    position: absolute;
+    bottom: 15.9%;
+    left: 2.1%;
+}
+
+.img-intro__spin:hover {
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.our-coffee{
+    position: relative;
+}
+
+.our-coffee .container{
+    max-width: 1356px;
+}
+
+.intro-coffee__block h2{
+    color: var(--blue-700);
+    font-weight: 617;
+    font-style: Bold;
+    font-size: 48px;
+    line-height: 31px;
+    letter-spacing: 0.02em;
+    margin-bottom: 26px;
+
+}
+
+.intro-coffee__block h3{
+    font-weight: 617;
+    font-size: 36px;
+    line-height: calc(44 / 36);
+    color: var(--blue-700);
+    margin-bottom: 4px;
+
+}
+
+.intro-coffee__desc p, .intro-coffee__desc{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(24 / 18);
+    color: var(--black);
+}
+
+.intro-coffee__desc p:not(:last-child){
+    margin-bottom: 15px;
+}
+
+.intro-coffee__desc.coffee-intro__desc--small p{
+    font-size: 16px;
+    line-height: calc(22 / 16);
+}
+
+.intro-coffee__block:not(:last-child){
+    margin-bottom: 65px;
+}
+
+.our-coffee__heading{
+    font-family: 'Suti';
+    font-weight: 400;
+    font-size: 60px;
+    line-height: calc(72 / 60);
+    letter-spacing: 0%;
+    padding: 22px 32px 31px 30px;
+    background: var(--blue-bird);
+    color: var(--white);
+    border: 7px solid var(--blue-100);
+    border-radius: 50%;
+    display: inline-block;
+    transform: rotate(-9deg);
+    top: -73px;
+    position: absolute;
+    /* Delete */
+    /* max-width: 319px;
+    max-height: 130px; */
+}
+
+.our-coffee{
+    background-color: var(--blue-100);
+    padding-top: 98px;
+    padding-bottom: 56px;
+}
+
+.our-coffee__list{
+    max-width: 1189px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 39px;
+}
+
+.our-coffee__item{
+    border-radius: 20px;
+    overflow: hidden;
+    width: calc((100% - 78px) / 3);
+    background-color: var(--white);
+}
+
+.our-coffee__item--content{
+    padding: 20px 26.25px 21px;
+}
+
+.our-coffee__item--name{
+    font-weight: 617;
+    font-size: 24px;
+    line-height: 1;
+    color: var(--black);
+    margin-bottom: 1px;
+}
+
+.our-coffee__item--subtite p{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(22 / 16);
+    letter-spacing: 0%;
+    color: var(--black);
+    margin-bottom: 7px;
+
+}
+
+.our-coffee__item--desc p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(20 / 14);
+    letter-spacing: 0%;
+}
+
+.our-coffee__item--thumbnail{
+    aspect-ratio: 370 / 197;
+
+}
+
+.our-coffee__item--thumbnail img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-cta{
+    background: var(--blue-bird);
+    padding: 40px 0 39px;
+}
+
+.section-cta .container{
+    max-width: 1437px;
+}
+
+.section-cta__inner{
+    max-width: 1144px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr max-content;
+     align-items: center;
+}
+
+.section-cta__wrapper{
+    padding: 50px 20px;
+    background: var(--blue-700);
+    border-radius: 20px;
+}
+
+.section-cta__title{
+    font-weight: 617;
+    font-size: 48px;
+    line-height: calc(60 / 48);
+    letter-spacing: 0%;
+    color: var(--white);
+    margin-bottom: 16px;
+}
+
+.section-cta__desc p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(24 / 18);
+    letter-spacing: 0%;
+    color: var(--white);
+}
+
+.section-cta__content{
+    /* width: 70.7%; */
+    padding-right: 40px;
+}
+
+.section-cta__groups a{
+    padding: 12px 20px;
+    font-family: 'Agrandir';
+    
+}
+
+.section-cta__groups{
+        display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+/* Careers */
+.hero-careers{
+    background: var(--blue-100);
+    padding: 31px 0 34px;
+}
+
+.hero-careers .container{
+    max-width: 1434px;
+}
+
+.hero-careers__inner{
+    background: var(--blue-700);
+    border-radius: 47px;
+    padding: 60px 40px 54px;
+}
+
+.hero-careers__inner{
+    position: relative;
+}
+
+.hero-careers__img{
+    position: absolute;
+    right: 8.1%;
+    bottom: -32%;
+    width: 14%;
+}
+
+.hero-careers__wrapper{
+    max-width: 1214px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 55px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.hero-careers__subtitle p{
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 18px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFCD49;
+    margin-bottom: 20px;
+}
+
+.hero-careers__title h1{
+    font-weight: 617;
+    font-size: 36px;
+    line-height: calc(44 / 36);
+    letter-spacing: 0%;
+    color: var(--white);
+    margin-bottom: 0;
+}
+
+.hero-careers__group{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.hero-careers__group a{
+        font-family: 'Agrandir';
+}
+.hero-careers__content{
+    width: calc(35% - 27.5px);
+
+}
+
+.hero-careers__desc{
+    width: calc(65% - 27.5px);
+    max-width: 692px;
+    padding: 20px 0;
+
+}
+
+.hero-careers__desc p{
+    color: var(--white);
+    font-family: 'Agrandir';
+    font-weight: 469;
+    font-size: 24px;
+    line-height: calc(32 / 24);
+    letter-spacing: 0%;
+}
+
+.why-onvo{
+    padding: 84px 0 62px;
+
+}
+
+.why-onvo .container{
+    max-width: 1344px;
+}
+
+.why-onvo__heading{
+    max-width: 1218px;
+    margin: 0 auto;
+    margin-bottom: 19px;
+}
+
+.why-onvo__title{
+    font-weight: 617;
+    font-style: Bold;
+    font-size: 36px;
+    line-height: calc(44 / 36);
+    letter-spacing: 0%;
+    color: var(--blue-700);
+    margin-bottom: 4px;
+}
+
+.why-onvo__desc p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(24 / 18);
+    letter-spacing: 0%;
+    color: var(--black);
+}
+
+.why-onvo__list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 29px 20px;
+
+}
+
+.why-onvo__item{
+    padding: 30px 50px;
+    width: calc((100% - 40px) / 3);
+}
+
+.why-onvo__item--top{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.why-onvo__item--icon{
+    max-width: 54px;
+    /* aspect-ratio: 1; */
+    /* object-fit: cover; */
+}
+
+.why-onvo__item--title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(30 / 20);
+    letter-spacing: 0%;
+    vertical-align: bottom;
+    color: var(--blue-700);
+    margin: 0;
+    max-width: 161px;
+}
+
+.why-onvo__item--desc p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(23 / 16);
+    letter-spacing: 0%;
+    color: #727272;
+    max-width: 286px;
+}
+
+.cta-careers .container{
+    max-width: 1434px;
+}
+
+.cta-careers__inner{
+    background: var(--blue-700);
+    border-radius: 47px;
+    padding: 53px 40px 49px;
+}
+
+.cta-careers__wrapper {
+    max-width: 1142px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.cta-careers__heading{
+    width: calc(39.5% - 20px);
+}
+
+.cta-careers__desc {
+    width: calc(60.5% - 20px);
+
+}
+
+.cta-careers__desc p{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(24 / 18);
+    letter-spacing: 0%;
+    color: var(--white);
+
+}
+
+.cta-careers__heading h2{
+    font-weight: 617;
+    font-size: 36px;
+    line-height: calc(44 / 36);
+    letter-spacing: 0%;
+    color: var(--white);
+    margin-bottom: 11px;
+}
+
+.intro-coffee.intro-careers{
+    padding-top: 42px;
+}
+
+.intro-coffee.intro-careers .intro-coffee__desc p:not(:last-child){
+    margin-bottom: 18px;
+}
+
+.intro-coffee.intro-careers .intro-coffee__desc{
+    max-width: 571px;
+}
+
+.intro-coffee.intro-careers .intro-coffee__content {
+    padding: 107px 20px 101px 3.5%;
+}
+
+.section-grow{
+    background: var(--soaring-orange);
+    padding: 17px 0 18px;
+}
+
+.section-grow .container{
+    max-width: 1462px;
+    padding: 0 29px;
+}
+
+.section-grow__inner{
+    background: var(--Beige, #FFFBF9);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.section-grow__thumbnail{
+    aspect-ratio: 682 / 456;
+    line-height: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 49.34%;
+}
+
+.section-grow__content{
+    padding: 40px 30px 64px clamp(40px, 6.528vw, 94px);
+    width: 50.66%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-grow__title{
+    font-weight: 617;
+    font-size: 48px;
+    line-height: calc(60 / 48);
+    letter-spacing: 0%;
+    margin-bottom: 19px;
+    color: var(--blue-700);
+}
+
+.section-grow__desc p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(24 / 18);
+    color: var(--black);
+    max-width: 537px;
+}
+
+.section-grow__thumbnail img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog-preview{
+    background: var(--blue-100);
+    padding: 70px 0 63px;
+}
+
+.blog-preview__heading{
+    padding-left: 33px;
+    padding-right: 14px;
+    margin-bottom: 32px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.blog-preview__list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.blog-preview .container{
+    max-width: 1365px;
+}
+
+.blog-preview__thumbnail{
+    aspect-ratio: 417.67 / 200;
+    line-height: 0;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.blog-preview__thumbnail img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog-preview__title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(24 / 18);
+    color: var(--black);
+    margin-bottom: 12px;
+}
+
+.blog-preview__excerpt, .blog-preview__date{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--black);
+    margin-bottom: 12px;
+}
+
+.blog-preview__excerpt{
+    margin-bottom: 34px;
+}
+
+.blog-preview__heading h2{
+    font-weight: 617;
+    font-size: 36px;
+    line-height: calc(44 / 36);
+    letter-spacing: 0%;
+    color: var(--blue-700);
+    margin: 0;
+}
+
+.blog-preview__link{
+    font-family: 'Arial';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(24 / 18);
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: var(--black);
+    display: inline-block;
+}
+
+.blog-preview__heading a{
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 6px;
+    padding-left: 14px;
+
+}
+
+.section-cta.section-cta__center .container{
+    max-width: 1440px;
+    padding: 0 20px;
+}
+
+.section-cta.section-cta__center{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.section-cta.section-cta__center .section-cta__title{
+    font-size: 36px;
+    line-height: calc(44 / 36);
+
+}
+
+.section-cta.section-cta__center .section-cta__inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-cta.section-cta__center .section-cta__wrapper{
+    padding: 33px 20px;
+}
+
+.section-cta.section-cta__center .section-cta__content{
+    padding-right: 44px;
+}
+
+.section-cta.section-cta__center .section-cta__title{
+    margin: 0;
+}
+
+.section-cta.section-cta__center .section-cta__desc{
+    display: none;
+}
+
+/* Hotels */
+.why-hotels{
+    background: var(--blue-bird);
+    padding: 64px 0 84px;
+}
+
+.why-hotels__heading h2{
+    font-weight: 617;
+    font-size: 48px;
+    line-height: calc(60 / 48);
+    letter-spacing: 0%;
+    text-align: center;
+    color: var(--white);
+    margin-bottom: 0;
+    max-width: 500px;
+    margin: 0 auto ;
+}
+
+.why-hotels__inner{
+    position: relative;
+}
+
+.why-hotel__img{
+    position: absolute;
+    top: -36%;
+    right: 45px;
+}
+
+.why-hotels__heading {
+    margin-bottom: 82px;
+}
+
+.why-hotels__desc p{
+    margin-top: 10px;
+    font-family: 'Agrandir';
+    font-weight: 336;
+    font-size: 24px;
+    line-height: calc(32 / 24);
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: var(--white);
+}
+
+.why-hotels__list{
+    display: flex;
+    gap: 42px;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* max-width: 1147px; */
+    margin: 0 auto;
+}
+
+.why-hotels__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 0 12px;
+    max-width: 184px;
+}
+
+.why-hotel__text{
+    color: var(--white);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(24 / 18);
+    text-align: center;
+
+}
+
+.section-brand{
+    padding: 74px 0 84px;
+}
+
+.section-brand .container{
+    max-width: 1088px;
+}
+
+.section-brand__inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section-brand__list{
+    width: 49%;
+    display: flex;
+    gap: 24.43px 30px;
+    justify-content: space-between;
+        flex-wrap: wrap;
+    align-items: center;
+}
+
+.section-brand__list img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.section-brand__content{
+    width: 51%;
+    padding-right: 30px;
+    max-width: 461px;
+}
+
+.section-brand__logo{
+    aspect-ratio: 133.38 / 78.29;
+    max-width: 133.38px;
+    line-height: 0;
+}
+
+.section-brand__title{
+    font-weight: 617;
+    font-size: 48px;
+    line-height: calc(60 / 48);
+    color: var(--blue-700);
+    margin-bottom: 7px;
+}
+
+.section-brand__desc p{
+    font-family: 'Agrandir';
+    font-weight: 336;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.01em;
+    color: var(--black);
+}
+
+.hotel-location{
+    background: var(--blue-100);
+    padding: 65px 0 130px;
+}
+
+.hotel-location .container{
+    max-width: 1256px;
+}
+
+.hotel-location__title{
+    font-family: 'Agrandir' ;
+    font-weight: 617;
+    font-size: 48px;
+    line-height: 31px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--blue-700);
+    margin-bottom: 81px;
+}
+
+.hotel-location__list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 38px 50px;
+}
+
+.hotel-location__content{
+    padding: 28px 33px 18px;
+}
+
+.hotel-location__item{
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hotel-location__thumbnail{
+    aspect-ratio: 368 / 157;
+    line-height: 0
+}
+
+.hotel-location__thumbnail img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hotel-location__name{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(30 / 20);
+    color: #101828;
+    margin-bottom: 10px;
+}
+
+.hotel-location__address, .hotel-location__phone{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--gray);
+    margin-bottom: 1px;
+}
+
+.hotel-location__phone{
+    margin-bottom: 21px;
+    display: inline-block;
+}
+
+
+.hotel-location__link a{
+    font-family: 'Agrandir';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: var(--blue-bird);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.hero-img .hero-careers__desc{
+    display: none;
+}
+
+.hero-careers.hero-careers__blue--bird {
+    background: var(--blue-bird);
+}
+
+.hero-careers__thumbnail{
+    position: absolute;
+    right: 5.4%;
+    max-width: 24.7%;
+    top: -2%;
+}
+
+.hero-careers.hero-img .hero-careers__content{
+    width: 67%;
+}
+
+.hero-careers.hero-container__small .container{
+    max-width: 1414px;
+}
+
+.hero-careers.hero-container__small{
+    padding-bottom: 31px;
+}
+
+.hero-careers.hero-img .hero-careers__inner{
+    padding: 70px 40px 66px
+}
+
+.hero-careers__vector{
+        position: absolute;
+    bottom: 8%;
+    left: -16%;
+    width: 34.4%;
+    z-index: 2;
+}
+
+.hero-careers__img--main{
+    border-radius: 8px;
+    border: 8px solid var(--blue-bird);
+    transform: rotate(5.76deg);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+    position: relative;
+}
+
+.hero-careers__thumbnail{
+    aspect-ratio: 1;
+}
+
+.community-programs .cp-content__subtile{
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 18px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--soaring-orange);
+    margin-bottom: 19px;
+}
+
+.community-programs__hotels.community-programs .inner{
+    grid-template-columns: 42.36% 57.64%;
+    min-height: 533px;
+}
+
+.community-programs__hotels.community-programs .content-col h2{
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 9px;
+}
+
+.community-programs__hotels.community-programs .cp-content-item p {
+    max-width: 488px;
+}
+
+.community-programs__hotels.community-programs  .btn{
+    padding: 12px 20px;
+}
+
+.community-programs__hotels.community-programs .btn-group {
+    margin-top: 13px;
+}
+
+.community-programs.community-programs__hotels .content-col .swiper-slide{
+    padding: 90px 20px 100px 0;
+    
+}
+
+.community-programs.community-programs__hotels .content-col  .swiper-pagination{
+    bottom: 83px;
+}
+
+@media (max-width: 1360px){
+    .hero-careers__thumbnail{
+        max-width: 23%;
+    }
+}
+
+@media (max-width: 1200px){
+    .hero-careers__img{
+        bottom: -20%;
+    }
+}
+
+@media (max-width: 1024px){
+    .intro-coffee__block:first-child{
+        order: 0;
+        margin-bottom: 0 !important;
+    }
+
+    .intro-coffee__thumbnail{
+        order: 1;
+        margin-top: 40px !important;
+    }
+
+    .intro-coffee__block {
+        order: 2;
+    } 
+
+    .intro-coffee__content{
+        display: contents;
+    }
+
+    .intro-coffee{
+        padding: 60px 0 120px;
+    }
+
+    .intro-coffee__block:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    .intro-coffee__block:nth-child(2) {
+        margin-top: 40px;
+    }
+
+    .intro-coffee__thumbnail{
+        width: 100%;
+        max-width: 587px;
+    }
+
+    .our-coffee__item{
+        width: calc((100% - 40px) / 3);
+    }
+
+    .our-coffee__list{
+        gap: 20px
+    }
+
+    .section-cta__inner{
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .our-coffee__item--content {
+        padding: 20px 15px 21px;
+    }
+
+    .hero-coffee__heading, .intro-coffee__block h2{
+        font-size: 38px;
+    }
+
+    .hero-coffee__description p{
+        font-size: 30px;
+    }
+
+    .intro-coffee__block h3{
+        font-size: 32px;
+    }
+
+    .our-coffee__heading{
+        font-size: 50px;
+    }
+
+    .our-coffee__item--name{
+        font-size: 20px;
+    }
+
+    .section-cta__content{
+        padding: 0;
+    }
+
+    .section-cta__groups{
+        gap: 20px;
+    }
+
+    /* Careers */
+    .hero-careers__group{
+        order: 1;
+    }
+
+    .hero-careers__content{
+        display: contents;
+    }
+
+    .hero-careers__subtitle{
+        width: 100%;
+    }
+
+    .hero-careers__wrapper{
+        gap: 0;
+    }
+
+    .hero-careers__desc{
+        padding: 0;
+        margin-bottom: 30px;
+        max-width: unset;
+        width: 100%;
+    }
+
+    .hero-careers__group{
+        margin-top: 10px;
+    }
+
+    
+
+    .why-onvo__item{
+        width: calc(50% - 10px);
+    }
+
+    .cta-careers__heading{
+        display: contents;
+    }
+
+    .cta-careers__heading h2, .cta-careers__desc, .intro-coffee__block{
+        width: 100%;
+    }
+
+    .cta-careers__heading a{
+        order: 1;
+        margin-top: 30px;
+    }
+
+    .cta-careers__wrapper{
+        gap: 0;
+    }
+
+    .intro-coffee.intro-careers .intro-coffee__desc{
+        max-width: 100%;
+    }
+
+    .intro-coffee.intro-careers{
+        padding-bottom: 80px;
+    }
+
+    .section-grow__content{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .section-grow__title{
+        font-size: 38px;
+    }
+
+    .blog-preview__list{
+        gap: 20px;
+    }
+
+    .why-onvo__title, .cta-careers__heading h2, .blog-preview__heading h2, .section-cta.section-cta__center .section-cta__title{
+        font-size: 32px;
+    }
+
+    .why-hotels__list{
+        gap: 40px 30px;
+    }
+
+    .why-hotels__box{
+        width: calc((100% - 60px) / 3);
+        max-width: unset;
+    }
+
+    .hotel-location__list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-brand__title, .hotel-location__title, .why-hotels__heading h2{
+        font-size: 38px;
+    }
+
+    .why-hotel__img{
+        right: -10px;
+    }
+
+    .hotel-location__title{
+        margin-bottom: 60px;
+    }
+
+    .hotel-location{
+        padding-bottom: 80px;
+    }
+
+    .why-hotels__heading{
+        margin-bottom: 60px;
+    }
+
+    .hero-careers__thumbnail{
+        position: relative;
+        right: unset;
+        top: unset;
+        max-width: unset;
+        margin-top: 30px;
+    }
+
+    .hero-img .hero-careers__title h1{
+        font-size: 32px;
+    }
+
+    .community-programs__hotels.community-programs .inner{
+        grid-template-columns: 1fr 1fr
+    }
+}
+
+@media (max-width: 767px){
+    .our-coffee__item{
+        width: calc(50% - 9px);
+    }
+
+    .our-coffee__list{
+        gap: 18px
+    }
+
+    .hero-coffee__heading{
+        font-size: 30px;
+        line-height: 35.5px;
+    }
+
+    .intro-coffee__block h2{
+        font-size: 30px;
+        line-height: 38px;
+        margin-bottom: 8px;
+    }
+
+    .intro-coffee__block h3{
+        font-size: 30px;
+        line-height: 38px;
+        margin-bottom: 11.5px;
+    }
+
+    .hero-coffee__box{
+        padding: 24px 16px 26px 28px;
+    }
+
+    .hero-coffee__box{
+        border-width: 4px;
+    }
+
+    .hero-coffee{
+        padding-top: 38px;
+        align-items: flex-start;
+        min-height: 475px;
+    }
+
+    .hero-coffee__description p{
+        font-size: 26px;
+    }
+
+    .hero-coffee__inner{
+        padding-left: 13px;
+    }
+
+    .hero-coffee__content::before{
+        left: -9.31px;
+        top: 5.61px;
+    }
+
+    .intro-coffee__inner{
+        padding: 0 6px;
+    }
+
+    .intro-coffee {
+        padding: 30px 0 84px;
+    }
+
+    .intro-coffee__desc p, .intro-coffee__desc{
+        font-size: 16px !important;
+        line-height: 22px !important;
+    }
+
+    .intro-coffee__block:not(:last-child) {
+        margin-bottom: 27px;
+    }
+
+    .intro-coffee__thumbnail{
+        padding-right: 17px;
+        aspect-ratio: 329 / 340;
+        margin-top: 27px  !important;
+    }
+
+    .intro-coffee__block:nth-child(2) {
+        margin-top: 42px;
+    }
+
+    .intro-coffee__thumbnail img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .img-intro__spin{
+        width: 25% !important;
+        height: auto !important;
+        bottom: 15.9%;
+        left: 2.6%;
+    }
+
+    .intro-coffee__desc p:not(:last-child) {
+        margin-bottom: 14px;
+    }
+
+    .our-coffee__heading{
+        font-size: 40px;
+        top: -41px;
+        /* max-width: 241px; */
+        /* Delete */
+        /* max-height: 96px; */
+        border-width: 5px;
+    }
+
+    .our-coffee{
+        padding-top: 88px;
+    }
+
+    .our-coffee__item{
+        border-radius: 12px;
+    }
+
+    .our-coffee__item--thumbnail {
+        aspect-ratio: 161.5 / 114;
+    }
+
+    .our-coffee__item--content{
+        padding: 16px 10px 13px;
+    }
+
+    .our-coffee__item--name{
+        font-size: 18px;
+        margin-bottom: 6px;
+    }
+
+    .our-coffee__item--subtite p{
+        font-size: 14px;
+        line-height: 1;
+    }
+
+    .our-coffee{
+        padding-bottom: 35px;
+    }
+
+    .section-cta__wrapper{
+        background: inherit;
+        padding: 13px 15px 0 ;
+        border-radius: 0;
+    }
+
+    .section-cta__groups{
+        gap: 12.35px;
+    }
+
+    .section-cta__inner{
+        gap: 28px;
+    }
+
+    .section-cta{
+        padding-bottom: 50px;
+    }
+
+    /* Careers */
+    .why-onvo__item{
+        padding: 10px 0;
+        width: calc(50% - 8.5px);
+    }
+
+    .why-onvo__item--top {
+        align-items: flex-start;
+        flex-direction: column-reverse;
+        gap: 17px;
+            margin-bottom: 6px;
+    }
+
+    .why-onvo__item--title{
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .why-onvo__item--desc p{
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .why-onvo__title, .cta-careers__heading h2{
+        font-size: 30px;
+    }
+
+    .cta-careers__inner{
+        padding: 32px 29px 27px;
+        border-radius: 20px;
+    }
+
+    .cta-careers .container{
+        padding: 0 15px;
+    }
+
+    .section-grow__content{
+        padding: 37px 31px 42px;
+        width: 100%;
+
+    }
+
+    .section-grow__thumbnail{
+        width: 100%;
+    }
+
+    .section-grow__title, .blog-preview__heading h2, .section-cta.section-cta__center .section-cta__title{
+        font-size: 30px;
+    }
+
+    .blog-preview__list{
+        grid-template-columns: 1fr;
+        gap: 41px;
+    }
+
+    .blog-preview__heading{
+        padding: 0;
+    }
+
+    .blog-preview__heading{
+        display: contents;
+    }
+
+    .blog-preview__heading a{
+        order: 1;
+        margin: 7px auto 0;
+    }
+
+    .blog-preview__inner{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 27px;
+    }
+
+    .section-cta.section-cta__center .section-cta__content {
+        padding-right: 0;
+    }
+
+    .section-cta.section-cta__center .section-cta__inner {
+        flex-direction: column;
+        gap: 13px;
+    }
+
+    .section-cta.section-cta__center .section-cta__title{
+        text-align: center;
+    }
+
+    .hero-careers .container{
+        padding:  0 23px;
+    }
+
+    .hero-careers__inner{
+        padding: 28px 27px 31px;
+        border-radius: 20px;
+    }
+
+    .hero-careers{
+        padding: 19px 0 17px;
+    }
+
+    .hero-careers__title h1{
+        max-width: 83%;
+        margin-bottom: 7px;
+    }
+
+    .hero-careers__group{
+        margin-top: 7px;
+    }
+
+    .hero-careers__group{
+        gap: 9px;
+        flex-wrap: wrap;
+    }
+
+    .hero-careers__desc p{
+        font-size: 20px;
+        font-family: 'Object Sans';
+        line-height: 30px;
+        font-weight: 700;
+    }
+
+    .hero-careers__subtitle p{
+        margin-bottom: 21px;
+    }
+
+    .hero-careers__desc{
+        margin-bottom: 18px;
+    }
+
+    .hero-careers__img {
+        bottom: unset;
+        width: 116.28px;
+        right: -15px;
+        top: 38px;
+    }
+
+    .why-onvo {
+        padding: 40px 0 34px;
+    }
+
+    .why-onvo .container{
+        padding: 0 39px;
+    }
+
+    .why-onvo__desc p{
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .why-onvo__title{
+        margin-bottom: 3px;
+    }
+
+    .why-onvo__list{
+        gap: 21px 17px;
+    }
+
+    .why-onvo__heading{
+        margin-bottom: 15px;
+    }
+
+    .why-onvo__item--title br{
+        display: none;
+    }
+
+    .cta-careers__desc p{
+        font-family: 'Object Sans';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+
+    }
+
+    .cta-careers__heading h2{
+        margin-bottom: 4px;
+    }
+
+    .cta-careers__heading a{
+        margin-top: 13px;
+    }
+
+    .intro-coffee.intro-careers {
+        padding-top: 33px;
+        padding-bottom: 37px;
+    }
+
+    .intro-coffee.intro-careers .intro-coffee__inner {
+        padding: 0 4px;
+    }
+
+    .intro-coffee.intro-careers .intro-coffee__block h3{
+        margin-bottom: 6.5px;
+    }
+
+    .intro-coffee.intro-careers .intro-coffee__desc p:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
+    .intro-coffee.intro-careers .intro-coffee__thumbnail{
+        padding: 0;
+        aspect-ratio: unset;
+    }
+
+    .intro-coffee.intro-careers .intro-coffee__thumbnail img{
+        height: auto;
+        object-fit: unset;
+    }
+
+    .section-grow .container{
+        padding: 0 15px;
+    }
+
+    .section-grow{
+        padding: 23px 0;
+    }
+
+    .section-grow__inner{
+        border-radius: 20px;
+    }
+
+    .section-grow__desc p{
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .section-grow__title{
+        margin-bottom: 7px;
+    }
+
+    .blog-preview{
+        padding: 34px 0;
+    }
+
+    .blog-preview__thumbnail{
+        aspect-ratio: 341 / 200;
+    }
+
+    .blog-preview__excerpt {
+        margin-bottom: 12px;
+    }
+
+    .blog-preview__date {
+        margin-bottom: 14px;
+    }
+
+    .section-cta.section-cta__center .section-cta__wrapper{
+        padding: 0 20px;
+    }
+
+    .section-cta.section-cta__center {
+        padding-top: 54px;
+        padding-bottom: 52px;
+    }
+
+    /* Hotels */
+    .hotel-location__list {
+        grid-template-columns: 1fr;
+        gap: 19px;
+    }
+
+    .section-brand__content, .section-brand__list{
+        width: 100%;
+    }
+
+    .why-hotels__box{
+        padding: 0;
+        width: calc(50% - 12.5px);
+    }
+
+    .why-hotels__list{
+        gap: 27px 25px;
+    }
+
+    .section-brand__title, .hotel-location__title, .why-hotels__heading h2{
+        font-size: 30px;
+        line-height: 38px;
+    }
+
+    .why-hotels__desc p, .why-hotels__heading h2{
+        text-align: left;
+    }
+
+    .why-hotels{
+        padding: 56px 0 42px;
+    }
+
+    .why-hotels__desc p {
+        margin-top: 16px;
+    }
+
+    .why-hotel__img{
+        display: none;
+    }
+
+    .why-hotels__inner{
+        padding: 0 5px;
+    }
+
+    .why-hotels__heading {
+        margin-bottom: 38px;
+    }
+
+    .why-hotels__box{
+        gap: 20px;
+    }
+
+    .section-brand {
+        padding: 37px 0 37px;
+    }
+
+    .section-brand .container{
+        padding: 0 28px;
+    }
+
+    .section-brand__content{
+        padding: 0;
+    }
+
+    .section-brand__title{
+        margin-bottom: 3px;
+    }
+
+    .section-brand__list{
+        gap: 15px 34.58px;
+        padding: 0 5px;
+    }
+
+    .section-brand__inner{
+        gap: 37px;
+    }
+
+    .section-brand__logo{
+        width: calc((100% - 69.16px) / 3);
+    }
+
+    .hotel-location {
+        padding: 54px 0 30px;
+    }
+
+    .hotel-location .container{
+        padding: 0 12px;
+    }
+
+    .hotel-location__title{
+        margin-bottom: 23px;
+    }
+
+    .hotel-location__item.hotel-hidden {
+        display: none;
+    }
+
+    .hotel-location__view{
+        display: inline-flex;
+        align-items: center;
+        margin-top: 31px;
+        gap: 6px;
+        cursor: pointer;
+        padding-right: 8px;
+    }
+
+    .btn svg{
+        z-index: 1;
+        position: relative;
+    }
+
+    .hotel-location__load {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-img .hero-careers__title h1{
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .hero-careers.hero-img .hero-careers__inner{
+        padding: 31px 26px;
+    }
+
+    .hero-careers__title h1{
+        max-width: 100%;
+    }
+
+    .hero-careers.hero-img .hero-careers__inner {
+        padding: 29px 26px;
+    }
+
+    .hero-careers__thumbnail {
+        left: 7%;
+        max-width: 94%;
+        margin-top: 22px;
+        margin-bottom: -20px;
+    }
+
+    .hero-careers__vector {
+        bottom: 8%;
+        left: -15%;
+        width: 39.4%;
+        
+    }
+
+    .community-programs__hotels.community-programs .inner{
+        grid-template-columns: 1fr;
+        gap: 33px;
+        min-height: unset;
+    }
+
+    .community-programs__hotels.community-programs .content-col .swiper-slide{
+        padding: 0;
+        padding-bottom: 37px
+    }
+
+    .community-programs .content-col .swiper-slide p.cp-content__subtile{
+        margin-bottom: 20px !important;
+    }
+
+    /* .community-programs .content-col .swiper-slide p {
+        margin-bottom: 4px;
+    } */
+
+    .community-programs__hotels.community-programs .btn {
+        padding: 8px 14px;
+    }
+
+    .community-programs__hotels.community-programs .btn-group {
+        margin-top: 0;
+    }
+
+    .community-programs__hotels.community-programs .content-col .swiper-slide p {
+        margin-bottom: 17px;
+    }
+
+    .community-programs__hotels.community-programs .content-col{
+        padding-bottom: 41px;
+    }
+
+    .community-programs.community-programs__hotels .content-col .swiper-pagination {
+        bottom: 0;
+    }
+
+    .hero-careers.hero-container__small {
+        padding-bottom: 18px;
+    }
+}
+
+@media(max-width: 393px){
+    .why-onvo__item{
+        width: 100%;
+    }
+}

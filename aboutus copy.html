@@ -356,7 +356,6 @@ h1,h2,h3,h4{
 /*=======================
   Mission & Values
 =======================*/
-
 .mission-values{
   background: var(--bg-blue);
   padding: clamp(16px, 2vw, 32px) 0 clamp(48px, 6vw, 88px);
@@ -364,14 +363,15 @@ h1,h2,h3,h4{
 
 .mission-values .inner{
   display: grid;
-  grid-template-columns: 1fr 1fr clamp(180px, 20vw, 280px);
-  gap: clamp(16px, 2vw, 24px);
+  grid-template-columns: clamp(180px, 20vw, 374px) 1fr;
+  gap: clamp(27px, 2vw, 32px);
   align-items: end;
 }
 
 .mv-card{
   background: var(--white);
-  padding: clamp(24px, 2.5vw, 50px);
+  border-radius: 20px;
+  padding: clamp(24px, 2.5vw, 36px);
 }
 
 .mv-card h3{
@@ -415,11 +415,23 @@ h1,h2,h3,h4{
   margin-bottom: 14px;
 }
 
+/* right column: values card + owl side by side */
+.mv-right{
+  display: flex;
+  align-items: flex-end;
+  gap: clamp(16px, 2vw, 28px);
+}
+
+.mv-right .mv-card{
+  flex: 1;
+}
+
 /* Owl column */
 .owl-col{
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .owl-placeholder{
@@ -433,117 +445,47 @@ h1,h2,h3,h4{
 }
 
 /*=======================
-  Community  (full-bleed)
+  Community-people wrapper
 =======================*/
+.community-people{
+  display: flex;
+  flex-direction: column;
+}
+
+.powered-people,
 .community{
   display: grid;
-  grid-template-columns: clamp(280px, 44vw, 634px) 1fr;
-  min-height: clamp(320px, 36vw, 520px);
+  grid-template-columns: 45.972% 54.028%;
   overflow: hidden;
-}
-
-.community .img-col{
   position: relative;
-  overflow: hidden;
-  background: #b0bcc8;
 }
 
-.community .img-col .img-placeholder{
+.powered-people {
+    grid-template-columns: 45.972% 54.028%;
+}
+
+
+.community .img-col img{
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
-.community .img-col .sticker-pa{
+/* PA Proud sticker */
+.sticker-pa{
   position: absolute;
-  top: clamp(10px, 2vw, 24px);
-  left: 50%;
-  transform: translateX(-50%);
-  width: clamp(72px, 7vw, 96px);
-  height: clamp(72px, 7vw, 96px);
-  background: var(--blue-bird);
-  border-radius: 50%;
-  border: 4px solid var(--white);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--white);
-  font-family: 'Agrandir', sans-serif;
-  font-weight: 700;
-  font-size: clamp(8px, 0.7vw, 10px);
-  text-align: center;
-  line-height: 1.2;
-  z-index: 2;
+  top: clamp(-20px, -1.5vw, -10px);
+  right: clamp(-20px, -1.5vw, -10px);
+  width: clamp(80px, 8vw, 112px);
+  height: clamp(80px, 8vw, 112px);
+  z-index: 3;
 }
 
-.community .content-col{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: clamp(32px, 5vw, 72px) clamp(28px, 5vw, 72px);
-  background: var(--white);
-}
-
-.community .content-col h2{
-  font-size: clamp(22px, 2.5vw, 32px);
-  margin-bottom: clamp(12px, 1.5vw, 20px);
-}
-
-.community .content-col p{
-  font-size: 14px;
-  line-height: 1.6;
-  color: var(--gray);
-  max-width: 420px;
-  margin-bottom: clamp(16px, 2vw, 28px);
-}
-
-/*=======================
-  Powered by People  (full-bleed)
-=======================*/
-.powered-people{
-  display: grid;
-  grid-template-columns: 1fr clamp(300px, 50vw, 720px);
-  min-height: clamp(320px, 36vw, 520px);
-  overflow: hidden;
-}
-
-.powered-people .content-col{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: clamp(32px, 5vw, 72px) clamp(28px, 5vw, 72px);
-  background: var(--white);
-}
-
-.powered-people .content-col h2{
-  font-size: clamp(22px, 2.5vw, 32px);
-  margin-bottom: clamp(12px, 1.5vw, 20px);
-}
-
-.powered-people .content-col p{
-  font-size: 14px;
-  line-height: 1.6;
-  color: var(--gray);
-  max-width: 420px;
-  margin-bottom: clamp(16px, 2vw, 28px);
-}
-
-.powered-people .btn-group{
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-
-.powered-people .img-col{
-  position: relative;
-  overflow: hidden;
-  background: #c0ccd8;
-}
-
-.powered-people .img-col .img-placeholder{
+.sticker-pa img{
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 /*=======================
@@ -722,7 +664,7 @@ h1,h2,h3,h4{
     min-height: 280px;
   }
   .mission-values .inner{
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
   .owl-col{ display: none; }
 }
@@ -867,20 +809,21 @@ h1,h2,h3,h4{
         <p>To provide guests with exceptional service that is always quick, always kind, and always convenient. We do this by offering clean and safe facilities, a vibrant atmosphere, and service with a smile.</p>
       </div>
 
-      <div class="mv-card">
-        <h3>Our Values</h3>
-        <p class="mv-intro">These values guide everything we do, from how we serve our guests to how we support our team.</p>
-        <ul class="values-list">
-          <li>Do It Once, Do It Right</li>
-          <li>Exceed Expectations</li>
-          <li>Be the Best at What You Do</li>
-          <li>Be a Team Player</li>
-          <li>Act with Integrity</li>
-        </ul>
-      </div>
-
-      <div class="owl-col">
-        <div class="owl-placeholder">🦉</div>
+      <div class="mv-right">
+        <div class="mv-card">
+          <h3>Our Values</h3>
+          <p class="mv-intro">These values guide everything we do, from how we serve our guests to how we support our team.</p>
+          <ul class="values-list">
+            <li>Do It Once, Do It Right</li>
+            <li>Exceed Expectations</li>
+            <li>Be the Best at What You Do</li>
+            <li>Be a Team Player</li>
+            <li>Act with Integrity</li>
+          </ul>
+        </div>
+        <div class="owl-col">
+          <div class="owl-placeholder">🦉</div>
+        </div>
       </div>
 
     </div>
@@ -888,42 +831,42 @@ h1,h2,h3,h4{
 </section>
 
 <!-- =====================
-     COMMUNITY
+     COMMUNITY + POWERED (2 rows, full-bleed)
 ===================== -->
-<section class="community">
+<div class="community-people">
 
-  <div class="img-col">
-    <div class="img-placeholder"></div>
-    <div class="sticker-pa">PA<br>PROUD</div>
-  </div>
+  <section class="community">
 
-  <div class="content-col">
-    <h2>Giving Back to Our<br>Communities</h2>
-    <p>Onvo is nothing without our communities, and we're proud to support the areas we call home. Through local partnerships, volunteer efforts, and charitable giving, we work to make a positive impact for the people we serve.</p>
-    <a href="#" class="btn btn-orange"><span>Learn More</span></a>
-  </div>
-
-</section>
-
-<!-- =====================
-     POWERED BY PEOPLE
-===================== -->
-<section class="powered-people">
-
-  <div class="content-col">
-    <h2>Powered by Our People</h2>
-    <p>Onvo is built by people who care about the journey as much as the destination. From our front-line teams to leadership, we're committed to creating welcoming spaces, supporting one another, and showing up for our communities.</p>
-    <div class="btn-group">
-      <a href="#" class="btn btn-orange"><span>Explore Careers</span></a>
-      <a href="#" class="btn btn-blue"><span>Meet Our Team</span></a>
+    <div class="img-col">
+      <div class="img-placeholder"></div>
+      <div class="sticker-pa-badge">PENNSYLVANIA<br>★<br>PROUD</div>
     </div>
-  </div>
 
-  <div class="img-col">
-    <div class="img-placeholder"></div>
-  </div>
+    <div class="content-col">
+      <h2>Giving Back to Our<br>Communities</h2>
+      <p>Onvo is nothing without our communities, and we're proud to support the areas we call home. Through local partnerships, volunteer efforts, and charitable giving, we work to make a positive impact for the people we serve.</p>
+      <a href="#" class="btn btn-orange"><span>Learn More</span></a>
+    </div>
 
-</section>
+  </section>
+
+  <section class="powered-people">
+
+    <div class="content-col">
+      <h2>Powered by Our People</h2>
+      <p>Onvo is built by people who care about the journey as much as the destination. From our front-line teams to leadership, we're committed to creating welcoming spaces, supporting one another, and showing up for our communities.</p>
+      <div class="btn-group">
+        <a href="#" class="btn btn-orange"><span>Explore Careers</span></a>
+        <a href="#" class="btn btn-blue"><span>Meet Our Team</span></a>
+      </div>
+    </div>
+
+    <div class="img-col">
+      <div class="img-placeholder"></div>
+    </div>
+
+  </section>
+</div>
 
 <!-- =====================
      REWARDS TICKER BANNER

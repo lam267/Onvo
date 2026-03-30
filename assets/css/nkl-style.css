@@ -28,16 +28,6 @@
     background: var(--blue-bird);
 }
 
-/* banner hero */
-.hero-careers__full--width {
-    background: var(--Color-2, #0057C7);
-
-}
-
-.hero-careers__full--width .hero-careers__content {
-    width: 100%
-}
-
 /* ===========================
    COMMUNITY PROGRAMS
 =========================== */
@@ -48,10 +38,9 @@
 
 .community-programs .inner {
     display: grid;
-    grid-template-columns: 43.9% 56.1%;
+    grid-template-columns: 1fr clamp(430px, 56.111vw, 808px);
     min-height: 560px;
 }
-
 .community-programs .img-col {
     position: relative;
     overflow: hidden;
@@ -133,11 +122,9 @@
     background: var(--Color-7, #86B9DF);
     padding: 17px 0px 18px;
 }
-
 .featured-impact .container {
     padding: 0 29px;
 }
-
 .featured-impact .inner {
     display: grid;
     grid-template-columns: 1fr clamp(324px, 42.291vw, 609px);
@@ -191,7 +178,7 @@
 
 .edu-grants .inner {
     display: grid;
-    grid-template-columns: 1fr clamp(340px, 44.236vw, 637px);
+    grid-template-columns: 55.76% 44.24%;
     min-height: 410px;
 }
 
@@ -203,7 +190,6 @@
     justify-content: center;
     order: 1;
 }
-
 .edu-grants h2 {
     color: var(--Beige, #FFFBF9);
 }
@@ -382,12 +368,6 @@
 }
 
 @media (max-width: 767px) {
-    .content-col h2 {
-        font-size: 32px;
-        line-height: 38px;
-        margin-bottom: 17px;
-    }
-
     .community-programs .btn-group {
         margin-top: 0px;
     }

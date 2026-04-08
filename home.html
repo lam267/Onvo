@@ -55,7 +55,7 @@
             </div>
         </header><!-- .site-header -->
         <main id="main" class="site-main" role="main" itemscope itemprop="mainContentOfPage">
-            <section class="hero">
+            <section class="hero" style="background-image: url(./assets/images/home/home-hero-overlay.png);">
                 <div class="hero-wrap">
                     <div class="hero-content sticker hide-mb">
                         <div class="hero-content-wrap">
@@ -66,10 +66,15 @@
                             </h1>
                             <p class="desc">Stop in and enjoy a fresh, hot large coffee for just $1. Simply download the Onvo app, create your account, and redeem the offer at checkout. New offers are added regularly.</p>
                             <div class="arrow absolute sticker">
-                                <img src="./assets/images/arrow.svg" alt="arrow sticker">
+                                <svg width="33" height="28" viewBox="0 0 33 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M31.856 10.2616C32.3123 9.25563 31.8667 8.0703 30.8607 7.61405L14.468 0.179082C13.4621 -0.277165 12.2767 0.168449 11.8205 1.17439C11.3643 2.18033 11.8099 3.36566 12.8158 3.82191L27.3871 10.4308L20.7782 25.0021C20.322 26.008 20.7676 27.1934 21.7736 27.6496C22.7795 28.1058 23.9648 27.6602 24.4211 26.6543L31.856 10.2616ZM0.703857 20.462L1.40764 22.3341L30.7384 11.3075L30.0346 9.43547L29.3308 7.56339L7.02739e-05 18.59L0.703857 20.462Z" fill="#FFBA00"/>
+                                </svg>
                             </div>
                             <div class="exclamation-point sticker absolute">
-                                <img src="./assets/images/home/exclamation-point.svg" alt="exclamation">
+                                <svg width="10" height="27" viewBox="0 0 10 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.74184 17.1885L2.44422 7.18619L3.26794 0.0334666L8.9174 0.694474L8.09368 7.8472L5.49506 17.5107L2.74184 17.1885ZM3.07503 26.2527C1.28723 26.0435 0.14416 24.6411 0.345972 22.8887C0.547785 21.1363 1.97916 20.0352 3.76696 20.2444C5.59052 20.4577 6.73359 21.8601 6.53178 23.6125C6.32996 25.3649 4.89859 26.466 3.07503 26.2527Z" fill="#0057C7"/>
+                                </svg>
+
                             </div>
                             <img src="./assets/images/home/proud.svg" alt="proud" class="proud sticker absolute">
                         </div>
@@ -118,7 +123,8 @@
                     </div>
                     <div class="prd-item coffee">
                         <div class="prd-image">
-                            <img src="./assets/images/home/Coffee.png" alt="coffee" class="sticker">
+                            <img src="./assets/images/home/Coffee.png" alt="coffee" class="sticker hide-mb">
+                            <img src="./assets/images/home/Coffee-mb.png" alt="coffee" class="sticker hide-pc">
                         </div>
                         <div class="prd-content">
                             <h3 class="title">Coffee</h3>
@@ -135,7 +141,7 @@
                 </div>
             </section>
 
-            <section class="curvy-banners">
+            <section class="curvy-banners" >
                 <div class="banner">
                     <svg viewBox="0 0 1440 178" xmlns="http://www.w3.org/2000/svg">
                     <defs>
@@ -166,7 +172,7 @@
                             ></video>
     
                             <div class="video-overlay absolute" style="background-image: url(./assets/images/home/video-overlay.png);">
-                                <button class="video-play" type="button" aria-label="Play video">
+                                <button class="video-play sticker" type="button" aria-label="Play video">
                                     <svg width="75" height="87" viewBox="0 0 75 87" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M75 43.3013L0 86.6025L0 0L75 43.3013Z" fill="#D9D9D9"></path>
                                     </svg>
@@ -199,7 +205,7 @@
                             <div class="desc">Join a team that delivers quick service, friendly support, and a better stop for every traveler.</div>
                         </div>
                         <div class="image">
-                            <img src="./assets/images/home/careers.png" alt="careers">
+                            <img src="./assets/images/home/Careers.png" alt="careers">
                         </div>
                     </div>
                     <div class="information-item">
@@ -214,11 +220,15 @@
                 </div>
             </section>
 
-            <section class="image-slider">
+            <section class="image-slider" style="background-image: url(./assets/images/home/image-overlay.png)">
                 <div class="image-slide-wrap">
                     <div class="content">
                         <h2 class="title">Stay in the Know with Onvo</h2>
-                        <a href="#" class="btn" target="_blank">Follow us on Instagram</a>
+                        <a href="#" class="btn" target="_blank">
+                            <span>
+                                Follow us on Instagram
+                            </span>
+                        </a>
                     </div>
                     <div class="slide-box">
                         <div class="swiper slide-image">
@@ -246,9 +256,18 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="slide-image-pagination hide-pc"></div>
                     </div>
                 </div>
             </section>
+
+            <style>
+                @media(max-width: 767px){
+                    .image-slider{
+                        background-image: url(./assets/images/home/image-overlay-mb.png) !important;
+                    }
+                }
+            </style>
         </main><!-- #main -->
         <footer id="footer" class="site-footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
             <div class="footer-container">

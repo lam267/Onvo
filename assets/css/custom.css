@@ -1023,9 +1023,660 @@
     bottom: 83px;
 }
 
+/* Food & Drink */
+.hero-food .hero-careers__img--main{
+    border-radius: 0;
+    border: none;
+    transform: unset;
+    height: auto;
+}
+
+.hero-food.hero-careers .hero-careers__content {
+    width: 53.9%;
+}
+
+.hero-food.hero-careers .hero-careers__title h1{
+    font-size: 48px;
+    line-height: calc(60 / 48);
+}
+
+.hero-food.hero-careers .hero-careers__inner {
+    padding: 67px 40px 76px;
+}
+
+.hero-food.hero-careers .hero-careers__subtitle p{
+    margin-bottom: 22px;
+}
+
+.hero-food.hero-careers .hero-careers__group{
+    margin-top: 22px;
+}
+
+.hero-food.hero-careers {
+    padding: 31px 0 26px;
+}
+
+.hero-food.hero-careers .hero-careers__thumbnail {
+    position: absolute;
+    right: 0.4%;
+    max-width: 46.7%;
+    top: 10%;
+}
+
+.intro-food .container{
+    max-width: 1394px;
+}
+
+.intro-food__inner{
+    display: grid;
+    grid-template-columns: 53.2% 46.8%;
+    align-items: center;
+}
+
+.intro-food__content{
+    padding: 50px 35px 77px clamp(20px, 7.014vw, 101px);
+
+}
+
+.intro-food__title{
+    font-weight: 617;
+    font-size: 48px;
+    line-height: calc(60 / 48);
+    color: var(--blue-700);
+    margin-bottom: 2px;
+}
+
+.intro-food__desc p, .intro-food__features--desc{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--black);
+}
+
+.intro-food__desc {
+    margin-bottom: 26px;
+}
+
+.intro-food__features--title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(30 / 20);
+    color: var(--black);
+    margin-bottom: 1px;
+}
+
+.intro-food__group{
+    margin-top: 30px;
+}
+
+.intro-food{
+    padding-top: 43px;
+    padding-bottom: 26px;
+}
+
+.fast-food .container{
+    padding: 0 27px
+}
+
+.fast-food__inner{
+    background: var(--blue-700);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    grid-template-columns: 54.12% 45.88%;
+    display: grid;
+    align-items: stretch;
+}
+
+.fast-food__content h2{
+    font-weight: 617;
+    font-size: 30px;
+    line-height: 38px;
+    color: #FFFBF9;
+    margin-bottom: 11px;
+}
+
+.fast-food__content{
+    padding: 40px 70px 44px clamp(20px, 6.736vw, 97px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fast-food__desc{
+    max-width: 522px;
+}
+
+.fast-food__image{
+    position: relative;
+}
+
+.fast-food__spin{
+    position: absolute;
+    top: 10%;
+    left: -10px;
+    transform: translateX(-50%);
+    width: 23% !important;
+    height: auto !important;
+    object-fit: unset !important;
+}
+
+.fast-food__spin:hover {
+  animation: spinFood 3s linear infinite;
+}
+
+@keyframes spinFood {
+  from {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  to {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+
+.fast-food__desc p, .fast-food__desc li{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFBF9;
+
+}
+
+.fast-food__desc li::marker{
+        font-size: 8px;
+}
+
+.fast-food__desc p:not(:last-child){
+    margin-bottom: 16px;
+}
+
+.fast-food__desc li:not(:last-child){
+    margin-bottom: 4px;
+}
+
+.fast-food__image{
+    aspect-ratio: 636 / 405;
+}
+
+.fast-food__image img{
+        width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.fast-food__desc ul{
+    margin-left: 24px;
+    margin-bottom: 16px;
+}
+
+.quick-section__content h2{
+    color: var(--blue-700);
+    margin-bottom: 40px;
+    font-weight: 617;
+    font-size: 48px;
+    line-height: 1.25;
+    margin-bottom: 10px;
+    max-width: 777px;
+
+}
+
+.quick-section__desc p{
+    color: var(--black);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0%;
+
+}
+
+.quick-section__list{
+    display: flex;
+    gap: 10px 54px;
+    max-width: 777px;
+    flex-wrap: wrap;
+
+}
+
+.quick-section .container{
+    max-width: 1394px;
+}
+
+.quick-section__list img{
+    max-width: 133.38px;
+}
+
+.quick-section__desc{
+    margin-bottom: 35px;
+    max-width: 777px;
+}
+
+.quick-section__inner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.quick-section{
+        padding-top: 30px;
+        padding-bottom: 39px;
+}
+
+.quick-section__image{
+    width: 36.7%;
+}
+
+.quick-section__content{
+    width: 63.3%;
+    padding-left: 40px;
+    padding-bottom: 38px;
+    padding-top: 40px;
+}
+
+.best-coffee{
+    background: var(--blue-100);
+}
+
+.best-coffee__inner{
+    grid-template-columns: 54.1% 45.9%;
+    display: grid;
+    align-items: stretch;
+}
+
+.best-coffee__wrapper {
+    padding: 73px 40px 40px calc((100vw - 1171px) / 2);
+    display: flex;
+    align-items: center;
+}
+
+.best-coffee__wrapper h2{
+    font-weight: 617;
+    font-size: 48px;
+    line-height: 1.25;
+    color: var(--blue-700);
+    margin-bottom: 4px;
+}
+
+.best-coffee__desc p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--black);
+}
+
+.best-coffee__desc {
+    margin-bottom: 22px;
+}
+
+.best-coffee__thumbnail{
+    aspect-ratio: 661 / 483;
+    line-height: 0;
+    max-width: 100%;
+}
+
+.best-coffee__thumbnail img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.best-coffee__content{
+    max-width: 495px;
+}
+
+.about-food{
+    padding-bottom: 17px;
+}
+
+.about-food__content h2{
+    color: var(--blue-700);
+    margin-bottom: 10px;
+    font-weight: 617;
+    font-size: 48px;
+    line-height: 1.25;
+    max-width: 777px;
+
+}
+
+.about-food__content{
+    padding: 122px 26px 100px 40px;
+}
+
+.about-food__desc p{
+    color: var(--black);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.375;
+
+}
+
+.about-food__desc {
+    margin-bottom: 26px;
+    max-width: 777px;
+}
+
+.about-food__inner{
+    grid-template-columns: 34.52% 65.48%;
+    display: grid;
+    align-items: center;
+}
+
+.about-food .container{
+    padding: 0;
+}
+
+.packages-food{
+    background: var(--soaring-orange);
+    padding: 33px 0;
+
+}
+
+.packages-food .container{
+    max-width: 1400px;
+}
+
+.packages-food__inner{
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    gap: 26px;
+}
+
+.packages-food__item{
+    background: var(--Beige, #FFFBF9);
+    border-radius: 25px;
+    overflow: hidden;
+    grid-template-columns: 63.24% 36.76%;
+    display: grid;
+        align-items: stretch;
+}
+
+.packages-food__content{
+    padding: 51px 38px 45px 41px;
+    
+}
+
+.packages-food__img{
+    line-height: 0;
+    aspect-ratio: 243 / 260;
+    max-width: 100%;
+}
+
+.packages-food__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.packages-food__title {
+    font-family: 'Agrandir';
+    font-weight: 617;
+    font-size: 30px;
+    line-height: calc(38 / 30);
+    vertical-align: bottom;
+    color: var(--black);
+    margin-bottom: 14px;
+}
+
+
+
+.packages-food__desc p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    color: var(--black);
+}
+
+.gallery-food{
+    background-color: var(--blue-100);
+    padding: 46px 0 32px;
+}
+
+.gallery-food__title{
+    color: var(--blue-700);
+    font-weight: 617;
+    font-size: 48px;
+    line-height: 1.25;
+    text-align: center;
+    margin-bottom: 25px;
+    padding: 0 26px;
+}
+
+.gallery-food__item {
+    aspect-ratio: 1;
+    line-height: 0;
+}
+
+.gallery-food__item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.gallery-food__item{
+    width: 100% !important;
+  max-width: 370px !important;
+}
+
+.gallery-food__swiper .swiper-pagination{
+    bottom: -2px;
+}
+
+.gallery-food__swiper{
+    padding-bottom: 34px;
+}
+
+/* Truck Stop Amenities */
+.hero-truck .hero-careers__title h1{
+    font-size: 48px;
+    line-height: 1.25;
+
+}
+
+.hero-truck .hero-careers__wrapper {
+    max-width: 1218px;
+}
+
+.hero-careers.hero-truck .hero-careers__inner {
+    padding: 61px 40px 73px;
+}
+
+.hero-careers.hero-truck .hero-careers__subtitle p{
+    margin-bottom: 34px;
+}
+
+.hero-careers.hero-truck .hero-careers__group{
+    margin-top: 19px;
+}
+
+.hero-careers.hero-truck .hero-careers__thumbnail {
+    position: absolute;
+    right: 6%;
+    max-width: 24.3%;
+    top: 3%;
+}
+
+.hero-careers.hero-truck{
+    padding-bottom: 26px;
+}
+
+.hero-careers.hero-truck .hero-careers__vector {
+    position: absolute;
+    bottom: 3%;
+    left: unset;
+    width: 31.4%;
+    z-index: 2;
+    right: -46px;
+}
+
+.best-coffee__truck{
+    background: var(--Beige, #FFFBF9);
+
+}
+
+.best-coffee__truck .best-coffee__wrapper {
+    padding: 148px 40px 40px calc((100vw - 1238px) / 2);
+}
+
+.best-coffee__truck .best-coffee__inner {
+    grid-template-columns: 53.5% 46.5%;
+}
+
+.best-coffee__truck .best-coffee__thumbnail{
+    aspect-ratio: 670 / 484;
+}
+
+.best-coffee__truck .best-coffee__content {
+    max-width: 566px;
+}
+
+.best-coffee__truck .best-coffee__wrapper h2{
+    margin-bottom: 9px;
+}
+
+.section-amenities__text{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: var(--black);
+}
+
+.section-amenities__icon{
+    max-width: 52px;
+}
+
+.section-amenities__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 27px;
+    max-width: 202px;
+    justify-content: space-between;
+    min-width: 177px;
+}
+
+.section-amenities__list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 67px 34px;
+    justify-content: center;
+}
+
+.section-amenities .container{
+    max-width: 1284px;
+}
+
+.section-amenities {
+    padding: 86px 0 57px;
+}
+
+.section-grow__truck{
+    background: var(--blue-300);
+    padding: 41px 0 33px;
+}
+
+.section-grow__truck .section-grow__inner{
+    border-radius: 20px;
+}
+
+.section-grow__truck .section-grow__content{
+    width: 63.54%;
+    padding: 65px 30px 47px clamp(26px, 5.833vw, 84px);
+}
+
+.section-grow__truck .section-grow__content img{
+    max-width: 211px;
+    margin-top: 34px;
+}
+
+.section-grow__truck .section-grow__thumbnail{
+    width: 36.46%
+}
+
+.section-grow__truck .section-grow__desc p{
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 714px;
+}
+
+.gallery-food__white{
+    background: var(--Beige, #FFFBF9);
+
+}
+
+.section-grow__truck .section-grow__title{
+    margin-bottom: 11px;
+}
+
+.info-truck{
+    background: var(--soaring-orange);
+    padding: 35px 0 34px;
+
+}
+
+.info-truck__title{
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 100%;
+    letter-spacing: 0.03em;
+    vertical-align: bottom;
+    text-transform: capitalize;
+    color: var(--blue-700);
+    margin-bottom: 7px;
+}
+
+.info-truck__desc{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    color: var(--black);
+    max-width: 274px;
+}
+
+.info-truck__item{
+    background: var(--white);
+    border-radius: 10px;
+    padding: 30px 50px 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-truck__inner{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px
+}
+
+.info-truck .container{
+    padding: 0 23px;
+}
 @media (max-width: 1360px){
     .hero-careers__thumbnail{
         max-width: 23%;
+    }
+
+    .hero-food.hero-careers .hero-careers__thumbnail {
+        max-width: 43%;
+    }
+}
+
+@media (max-width: 1290px){
+    .best-coffee__truck .best-coffee__wrapper{
+        padding-left: 26px;
+    }
+}
+@media (max-width: 1223px){
+    .best-coffee__wrapper{
+        padding-left: 26px;
+    }
+
+    .fast-food__content{
+        padding-left: 26px;
     }
 }
 
@@ -1033,6 +1684,8 @@
     .hero-careers__img{
         bottom: -20%;
     }
+
+    
 }
 
 @media (max-width: 1024px){
@@ -1131,6 +1784,8 @@
 
     .hero-careers__wrapper{
         gap: 0;
+        align-items: flex-start;
+        flex-direction: column;
     }
 
     .hero-careers__desc{
@@ -1229,7 +1884,7 @@
         position: relative;
         right: unset;
         top: unset;
-        max-width: unset;
+        max-width: 400px;
         margin-top: 30px;
     }
 
@@ -1239,6 +1894,87 @@
 
     .community-programs__hotels.community-programs .inner{
         grid-template-columns: 1fr 1fr
+    }
+
+    /* Food & Drink */
+    .hero-food.hero-careers .hero-careers__title h1{
+        font-size: 38px;
+    }
+
+    .intro-food__content{
+        padding-left: 0;
+    }
+
+    .hero-careers.hero-food .hero-careers__group{
+        display: block;
+        width: 100%;
+        order: unset;
+    }
+
+    .hero-food.hero-careers .hero-careers__thumbnail{
+        position: relative;
+        right: 0;
+        top: unset;
+        max-width: unset;
+        display: block;
+        aspect-ratio: unset;
+    }
+
+    .packages-food__inner{
+        grid-template-columns: 1fr
+    }
+
+    .about-food__content {
+        padding: 62px 26px 60px 40px;
+    }
+
+    .intro-food__content{
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    .intro-food{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .intro-food__title, .best-coffee__wrapper h2, .gallery-food__title{
+        font-size: 38px;
+    }
+
+    .quick-section__content h2, .about-food__content h2{
+        font-size: 32px;
+    }
+
+    .packages-food__title{
+        font-size: 24px;
+    }
+
+    /* Truck Stop Amenities */
+
+    .info-truck__item{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .section-grow__truck .section-grow__content{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .best-coffee__truck .best-coffee__wrapper{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .hero-careers.hero-truck .hero-careers__thumbnail{
+        position: relative;
+        right: unset;
+        top: unset;
+        max-width: 400px;
+        order: 2;
+        margin-top: 50px;
     }
 }
 
@@ -1789,6 +2525,7 @@
         max-width: 94%;
         margin-top: 22px;
         margin-bottom: -20px;
+        order: 2;
     }
 
     .hero-careers__vector {
@@ -1839,6 +2576,366 @@
 
     .hero-careers.hero-container__small {
         padding-bottom: 18px;
+    }
+
+    /* Food & Drink */
+    .hero-food.hero-careers .hero-careers__title h1{
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    .intro-food__inner {
+        grid-template-columns: 1fr;
+        gap: 34px;
+    }
+
+    .fast-food__inner{
+        grid-template-columns: 1fr;
+
+    }
+
+    .fast-food__spin{
+        display: none;
+    }
+
+    .fast-food__content{
+       padding: 37px 28px 34px 32px;
+    }
+
+    .quick-section__content{
+        width: 100%;
+        padding-left: 0;
+        padding: 0;
+    }
+
+    .quick-section__image{
+        width: 100%;
+    }
+
+    .quick-section__inner {
+        flex-direction: column-reverse;
+        gap: 22px;
+    }
+
+    .best-coffee__inner, .about-food__inner {
+        grid-template-columns: 1fr;
+    }
+
+    .about-food__image{
+        order: 1;
+        right: 0;
+        position: absolute;
+        
+    }
+    
+
+    .fast-food__desc p:not(:last-child) {
+        margin-bottom: 14px;
+    }
+
+    .fast-food__desc ul {
+        margin-bottom: 14px;
+    }
+
+    .fast-food__content h2{
+        margin-bottom: 10px;
+    }
+
+    .hero-food.hero-careers {
+        padding: 19px 0 26px;
+    }
+
+    .hero-food.hero-careers .hero-careers__group {
+        margin-top: 18px;
+    }
+
+    .hero-food.hero-careers .hero-careers__wrapper{
+        display: block;
+    }
+    .hero-food.hero-careers .hero-careers__thumbnail{
+        right: unset;
+        left: -40px;
+        width: calc(100% + 87px);
+        margin-top: 4px;
+        margin-bottom: -83px;
+    }
+
+    .hero-food.hero-careers .hero-careers__thumbnail img{
+        width: auto;
+    }
+
+    .hero-food.hero-careers{
+        padding-bottom: 23px;
+    }
+
+    .intro-food__title{
+        font-size: 30px;
+        margin-bottom: 11px;
+    }
+
+    .intro-food .container{
+        padding: 0 30px;
+    }
+
+    .intro-food {
+        padding-top: 36px;
+        padding-bottom: 35px;
+    }
+
+    .intro-food__desc p, .intro-food__features--desc{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .intro-food__content{
+        padding-right: 0;
+    }
+
+    .intro-food__desc {
+        margin-bottom: 12px;
+    }
+
+    .intro-food__features--title{
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 8px;
+    }
+
+    .intro-food__group {
+        margin-top: 12px;
+    }
+
+    .fast-food .container {
+        padding: 0 16px;
+    }
+
+    .fast-food__image{
+        aspect-ratio: 362 / 242
+    }
+
+    .quick-section__content h2{
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 13px;
+    }
+
+
+    .quick-section {
+        padding-top: 52px;
+        padding-bottom: 33px;
+    }
+
+    .quick-section__desc p, .best-coffee__desc p, .about-food__desc p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .quick-section__list img{
+        max-width: 73px;
+    }
+
+    .quick-section__list{
+        gap: 16px;
+    }
+
+    .quick-section__desc{
+        margin-bottom: 21px;
+    }
+
+    .best-coffee__wrapper h2{
+        font-size: 30px;
+        line-height: 38px;
+        margin-bottom: 11px;
+    }
+
+    .best-coffee__wrapper{
+        padding: 45px 26px 44px 31px;
+    }
+
+    .best-coffee__desc {
+        margin-bottom: 16px;
+    }
+
+    .best-coffee__thumbnail {
+        aspect-ratio: 393 / 241;
+    }
+
+    .about-food__content h2{
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 7px
+    }
+
+    .about-food__desc {
+        margin-bottom: 24px;
+    }
+
+    .about-food__content {
+        padding: 43px 20px 0px 30px;
+    }
+
+    .about-food__content img{
+        max-width: 100px;
+    }
+
+    .about-food__inner{
+        position: relative;
+    }
+
+    .about-food__image{
+        width: max-content;
+        margin-left: auto;
+        margin-top: -69px;
+        position: relative;
+    }
+
+    .about-food{
+        padding-bottom: 29px;
+    }
+
+    .packages-food{
+        padding: 24px 0 28px;
+    }
+
+    .packages-food .container{
+        padding: 0 19px;
+    }
+
+    .packages-food__title{
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 7px;
+    }
+
+    .packages-food__content {
+        padding: 23px 25px 26px 29px;
+    }
+
+    .packages-food__desc p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .packages-food__inner{
+        gap: 25px
+    }
+
+    .gallery-food__title{
+        font-size: 26px;
+        line-height: 31px;
+        margin-bottom: 22px;
+    }
+
+    .gallery-food {
+        padding: 38px 0 29px;
+    }
+
+    /* Truck Stop Amenities */
+    .info-truck__inner{
+        grid-template-columns: 1fr
+    }
+
+    .section-amenities__item{
+        width: 152px;
+        min-width: unset;
+    }
+
+    .section-amenities__list {
+        gap: 47.3px 36px;
+    }
+
+    .hero-careers.hero-truck .hero-careers__subtitle p {
+        margin-bottom: 20px;
+    }
+
+    .hero-careers.hero-truck .hero-careers__group {
+        margin-top: 7px;
+    }
+
+    .hero-careers.hero-truck .hero-careers__thumbnail {
+        margin-top: 34px;
+        width: 86%;
+        left: 6%;
+        margin-bottom: 0;
+    }
+
+    .hero-careers.hero-truck .hero-careers__vector {
+        position: absolute;
+        bottom: -13%;
+        left: unset;
+        width: 41.4%;
+        z-index: 2;
+        right: -37px;
+    }
+
+    .hero-careers.hero-truck .hero-careers__inner {
+        padding: 29px 26px 39px;
+    }
+
+    .best-coffee__truck .best-coffee__inner{
+        grid-template-columns: 1fr;
+    }
+
+    .best-coffee__truck .best-coffee__wrapper h2{
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .best-coffee__truck .best-coffee__wrapper {
+        padding: 34px 30px 14px 33px;
+    }
+
+    .best-coffee__truck .best-coffee__wrapper h2 {
+        margin-bottom: 16px;
+    }
+
+    .best-coffee__truck .best-coffee__thumbnail {
+        aspect-ratio: 393 / 277;
+    }
+
+    .section-amenities {
+        padding: 51px 0 63px;
+    }
+
+    .section-grow__truck .section-grow__content, .section-grow__truck .section-grow__thumbnail{
+        width: 100%;
+    }
+
+    .section-grow__truck .section-grow__content{
+        padding: 37px 30px 40px 30px;
+    }
+
+    .section-grow__truck .section-grow__title {
+        margin-bottom: 13px;
+    }
+
+    .section-grow__truck .section-grow__content img{
+        max-width: 182px;
+        margin-top: 30px;
+    }
+
+    .section-grow__truck{
+        padding: 23px 0 26px;
+    }
+
+    .info-truck{
+        padding: 24px 0 28px;
+    }
+
+    .info-truck .container {
+        padding: 0 21px;
+    }
+
+    .info-truck__item{
+        padding: 37px 24px 36px;
+    }
+
+    .info-truck__title{
+        margin-bottom: 8px;
+    }
+
+    .info-truck__inner{
+        gap: 21px;
     }
 }
 
